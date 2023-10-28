@@ -1,0 +1,16 @@
+// final String QnA_PATH = 'Android/Status/QnA/';
+// final String STORY_BUCKET = 'cloudyml-app-status-expire24hrs';
+// final String QnA_TITLE = "QnA Viewer";
+// final String QnA_ASSET_IMAGE_URL = "https://firebasestorage.googleapis.com/v0/b/cloudyml-app.appspot.com/o/Assets%2FQnA.png?alt=media&token=b4f104e7-ccaa-4f18-a370-201d58e2a116";
+// final int NUMBER_OF_STORY = 3;
+// final double HEIGHT_OF_STORY_LIST = 100;
+// final double STORY_IMAGE_RADIUS = 30;
+// final double STORY_BORDER_RADIUS = 35;
+// final REGEX_IMAGE = RegExp('[^\\s]+(.*?)\\.(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)\$');
+// final String POST_N_REELS_TITLE = "Posts & Reels";
+// final String POST_N_REELS_ASSET_IMAGE_URL = "https://firebasestorage.googleapis.com/v0/b/cloudyml-app.appspot.com/o/Assets%2FDP_png.png?alt=media&token=3c1029c7-305e-4eae-b904-3f83e49aa937";
+// final String POST_N_REELS_PATH = 'Android/Status/PostsAndReels/';
+// final String USER_ASSET_IMAGE_PATH = 'assets/no-avatar.png';
+// final String QNA_TEXT_STORY_DOCUMENT = 'QnATextStatus';
+// final String POST_N_REELS_TEXT_STORY_DOCUMENT = 'PostNReelsTextStatus';
+// final double STORY_HEIGHT = 90;
