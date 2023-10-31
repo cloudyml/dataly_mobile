@@ -480,7 +480,9 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            '🕗 8:00 PM - 9:00 PM  🕗',
+                            taDetails.isNotEmpty
+                                ? '🕗 ${taDetails[0]['doubt_session_time']} 🕗'
+                                : '🕗 8:00 PM - 9:00 PM 🕗',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 16,
@@ -531,7 +533,7 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
   getTAData() async {
     try {
       await FirebaseFirestore.instance
-          .collection('LiveDoubt')
+          .collection('LiveDoubt_dataly')
           .get()
           .then((value) {
         setState(() {
@@ -548,7 +550,7 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
 
   addTaDetail(TextEditingController taNameController,
       TextEditingController timeController) async {
-    final ref = FirebaseFirestore.instance.collection('LiveDoubt');
+    final ref = FirebaseFirestore.instance.collection('LiveDoubt_dataly');
 
     try {
       taDetails.add({
@@ -557,7 +559,7 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
       });
 
       await ref
-          .doc('mmULgHy2n63B6SInX7tR')
+          .doc('9Xl5YqipCuZ0AVBC5an6')
           .update({'taDetails': taDetails}).whenComplete(() {
         Fluttertoast.showToast(msg: 'TA Details Added');
       });
@@ -571,8 +573,8 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
       Fluttertoast.showToast(msg: 'Please Enter Link');
     } else {
       try {
-        final ref = FirebaseFirestore.instance.collection('LiveDoubt');
-        await ref.doc('mmULgHy2n63B6SInX7tR').update(
+        final ref = FirebaseFirestore.instance.collection('LiveDoubt_dataly');
+        await ref.doc('9Xl5YqipCuZ0AVBC5an6').update(
             {'activeLink': linkController.text.trim()}).whenComplete(() {
           Fluttertoast.showToast(msg: 'Link Updated');
         });
@@ -585,10 +587,10 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
   removeTaDetail(int index) async {
     try {
       taDetails.removeAt(index);
-      final ref = FirebaseFirestore.instance.collection('LiveDoubt');
+      final ref = FirebaseFirestore.instance.collection('LiveDoubt_dataly');
 
       await ref
-          .doc('mmULgHy2n63B6SInX7tR')
+          .doc('9Xl5YqipCuZ0AVBC5an6')
           .update({'taDetails': taDetails}).whenComplete(() {
         Fluttertoast.showToast(msg: 'TA Details Removed');
       });
@@ -603,10 +605,10 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
       taDetails[index]['name'] = name;
       taDetails[index]['time'] = time;
 
-      final ref = FirebaseFirestore.instance.collection('LiveDoubt');
+      final ref = FirebaseFirestore.instance.collection('LiveDoubt_dataly');
 
       await ref
-          .doc('mmULgHy2n63B6SInX7tR')
+          .doc('9Xl5YqipCuZ0AVBC5an6')
           .update({'taDetails': taDetails}).whenComplete(() {
         Fluttertoast.showToast(msg: 'TA Details Edited');
       });
@@ -620,10 +622,10 @@ class _LiveDoubtScreenState extends State<LiveDoubtScreen> {
     try {
 
       isShow = value;
-      final ref = FirebaseFirestore.instance.collection('LiveDoubt');
+      final ref = FirebaseFirestore.instance.collection('LiveDoubt_dataly');
 
       await ref
-          .doc('mmULgHy2n63B6SInX7tR')
+          .doc('9Xl5YqipCuZ0AVBC5an6')
           .update({'show': value}).whenComplete(() {
 
         value ?
