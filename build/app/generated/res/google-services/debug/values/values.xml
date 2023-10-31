@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">67056708090-ilmalptf2nehne9li3kn2it4q4q2mhg2.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://cloudyml-app-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">67056708090</string>
+    <string name="google_api_key" translatable="false">AIzaSyAjeM1nHxStEbUaUoryKEmu3wKE9-96p8c</string>
+    <string name="google_app_id" translatable="false">1:67056708090:android:c1d1746d931d7dfd6ddc43</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAjeM1nHxStEbUaUoryKEmu3wKE9-96p8c</string>
+    <string name="google_storage_bucket" translatable="false">cloudyml-app.appspot.com</string>
+    <string name="project_id" translatable="false">cloudyml-app</string>
+</resources>

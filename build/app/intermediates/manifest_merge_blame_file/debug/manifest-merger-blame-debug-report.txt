@@ -1,0 +1,1409 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cloudyml.cloudymlapp"
+4    android:versionCode="52"
+5    android:versionName="17.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:4:5-66
+14-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:5:5-79
+15-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:5:22-76
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:6:4-80
+16-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:6:21-77
+17    <uses-permission
+17-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:7:4-79
+18        android:name="android.permission.READ_EXTERNAL_STORAGE"
+18-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:7:21-76
+19        android:maxSdkVersion="32" />
+19-->[:open_filex] D:\dataly_mobile\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-35
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:8:4-70
+20-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:8:21-67
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:9:4-65
+21-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:9:21-62
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:6:4-80
+22-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:6:21-77
+23    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+23-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:11:5-76
+23-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:11:22-73
+24    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+24-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:12:5-75
+24-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:12:22-72
+25    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+25-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:13:5-75
+25-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:13:22-72
+26    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+26-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:11:5-76
+26-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:11:22-73
+27    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+27-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:12:5-75
+27-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:12:22-72
+28    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+28-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:13:5-75
+28-->D:\dataly_mobile\android\app\src\main\AndroidManifest.xml:13:22-72
+29    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+29-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+29-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+30-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+30-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+31-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+31-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+32    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+32-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+32-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+33    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+33-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
+33-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
+34
+35    <queries>
+35-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-17:15
+36        <intent>
+36-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:18
+37            <action android:name="android.intent.action.GET_CONTENT" />
+37-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
+37-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
+38
+39            <data android:mimeType="*/*" />
+39-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+39-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
+40        </intent>
+41        <intent>
+41-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+42            <action android:name="android.support.customtabs.action.CustomTabsService" />
+42-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-90
+42-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-87
+43        </intent>
+44        <intent>
+44-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:18
+45            <action android:name="android.intent.action.VIEW" />
+45-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-65
+45-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-62
+46
+47            <data android:scheme="upi" />
+47-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+48        </intent>
+49
+50        <package android:name="com.SIBMobile" />
+50-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-49
+50-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:17:18-46
+51        <package android:name="com.YesBank" />
+51-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-47
+51-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:18:18-44
+52        <package android:name="com.atomyes" />
+52-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-47
+52-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:19:18-44
+53        <package android:name="com.aubank.aupay.bhimupi" />
+53-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-60
+53-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:20:18-57
+54        <package android:name="com.bankofbaroda.upi" />
+54-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-56
+54-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:21:18-53
+55        <package android:name="com.canarabank.mobility" />
+55-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-59
+55-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:22:18-56
+56        <package android:name="com.citrus.citruspay" />
+56-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:23:9-56
+56-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:23:18-53
+57        <package android:name="com.csam.icici.bank.imobile" />
+57-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-63
+57-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:24:18-60
+58        <package android:name="com.cub.plus.gui" />
+58-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-52
+58-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:25:18-49
+59        <package android:name="com.cub.wallet.gui" />
+59-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-54
+59-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:26:18-51
+60        <package android:name="com.dbs.in.digitalbank" />
+60-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:27:9-58
+60-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:27:18-55
+61        <package android:name="com.dreamplug.androidapp" />
+61-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-60
+61-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:28:18-57
+62        <package android:name="com.enstage.wibmo.hdfc" />
+62-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-58
+62-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:29:18-55
+63        <package android:name="com.equitasbank.upi" />
+63-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-55
+63-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:30:18-52
+64        <package android:name="com.euronet.iobupi" />
+64-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:31:9-54
+64-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:31:18-51
+65        <package android:name="com.fampay.in" />
+65-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:32:9-49
+65-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:32:18-46
+66        <package android:name="com.finacus.jetpay" />
+66-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:33:9-54
+66-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:33:18-51
+67        <package android:name="com.finacus.tranzapp" />
+67-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-56
+67-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:34:18-53
+68        <package android:name="com.finopaytech.bpayfino" />
+68-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-60
+68-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:35:18-57
+69        <package android:name="com.fisglobal.bandhanupi.app" />
+69-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:36:9-64
+69-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:36:18-61
+70        <package android:name="com.fisglobal.syndicateupi.app" />
+70-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-66
+70-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-63
+71        <package android:name="com.freecharge.android" />
+71-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:38:9-58
+71-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:38:18-55
+72        <package android:name="com.fss.idfcpsp" />
+72-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:39:9-51
+72-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:39:18-48
+73        <package android:name="com.fss.ippbpsp" />
+73-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-51
+73-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:40:18-48
+74        <package android:name="com.fss.jnkpsp" />
+74-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-50
+74-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:41:18-47
+75        <package android:name="com.fss.pnbpsp" />
+75-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:42:9-50
+75-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:42:18-47
+76        <package android:name="com.fss.unbipsp" />
+76-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-51
+76-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:43:18-48
+77        <package android:name="com.fss.vijayapsp" />
+77-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:44:9-53
+77-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:44:18-50
+78        <package android:name="com.google.android.apps.nbu.paisa.user" />
+78-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-74
+78-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:45:18-71
+79        <package android:name="com.idbibank.paywiz" />
+79-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:46:9-55
+79-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:46:18-52
+80        <package android:name="com.infra.boiupi" />
+80-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:47:9-52
+80-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:47:18-49
+81        <package android:name="com.infrasoft.uboi" />
+81-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:48:9-54
+81-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:48:18-51
+82        <package android:name="com.infrasofttech.centralbankupi" />
+82-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:49:9-68
+82-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:49:18-65
+83        <package android:name="com.infrasofttech.indianbankupi" />
+83-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:50:9-67
+83-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:50:18-64
+84        <package android:name="com.infrasofttech.mahaupi" />
+84-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:51:9-61
+84-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:51:18-58
+85        <package android:name="com.jio.myjio" />
+85-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:52:9-49
+85-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:52:18-46
+86        <package android:name="com.khaalijeb.inkdrops" />
+86-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:53:9-58
+86-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:53:18-55
+87        <package android:name="com.lcode.allahabadupi" />
+87-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:54:9-58
+87-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:54:18-55
+88        <package android:name="com.lcode.corpupi" />
+88-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:55:9-53
+88-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:55:18-50
+89        <package android:name="com.lcode.csbupi" />
+89-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:56:9-52
+89-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:56:18-49
+90        <package android:name="com.lcode.dlbupi" />
+90-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:57:9-52
+90-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:57:18-49
+91        <package android:name="com.lcode.smartz" />
+91-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:58:9-52
+91-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:58:18-49
+92        <package android:name="com.lcode.ucoupi" />
+92-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:59:9-52
+92-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:59:18-49
+93        <package android:name="com.lvbank.upaay" />
+93-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:60:9-52
+93-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:60:18-49
+94        <package android:name="com.mgs.hsbcupi" />
+94-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:61:9-51
+94-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:61:18-48
+95        <package android:name="com.mgs.induspsp" />
+95-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:62:9-52
+95-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:62:18-49
+96        <package android:name="com.mgs.obcbank" />
+96-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:63:9-51
+96-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:63:18-48
+97        <package android:name="com.microlucid.mudrapay.android" />
+97-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:64:9-67
+97-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:64:18-64
+98        <package android:name="com.mipay.in.wallet" />
+98-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:65:9-55
+98-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:65:18-52
+99        <package android:name="com.mobikwik_new" />
+99-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:66:9-52
+99-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:66:18-49
+100        <package android:name="com.mobileware.upipsb" />
+100-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:67:9-57
+100-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:67:18-54
+101        <package android:name="com.myairtelapp" />
+101-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:68:9-51
+101-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:68:18-48
+102        <package android:name="com.mycompany.kvb" />
+102-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:69:9-53
+102-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:69:18-50
+103        <package android:name="com.olive.andhra.upi" />
+103-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:70:9-56
+103-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:70:18-53
+104        <package android:name="com.olive.dcb.upi" />
+104-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:71:9-53
+104-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:71:18-50
+105        <package android:name="com.omegaon_internet_pvt_ltd" />
+105-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:72:9-64
+105-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:72:18-61
+106        <package android:name="com.phonepe.app" />
+106-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:73:9-51
+106-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:73:18-48
+107        <package android:name="com.rblbank.mobank" />
+107-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:74:9-54
+107-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:74:18-51
+108        <package android:name="com.rblbank.upi" />
+108-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:75:9-51
+108-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:75:18-48
+109        <package android:name="com.realmepay.payments" />
+109-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:76:9-58
+109-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:76:18-55
+110        <package android:name="com.sbi.upi" />
+110-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:77:9-47
+110-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:77:18-44
+111        <package android:name="com.snapwork.hdfc" />
+111-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:78:9-53
+111-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:78:18-50
+112        <package android:name="com.truecaller" />
+112-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:79:9-50
+112-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:79:18-47
+113        <package android:name="com.udma.yuvapay.app" />
+113-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:80:9-56
+113-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:80:18-53
+114        <package android:name="com.ultracash.payment.customer" />
+114-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:81:9-66
+114-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:81:18-63
+115        <package android:name="com.upi.axispay" />
+115-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:82:9-51
+115-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:82:18-48
+116        <package android:name="com.upi.federalbank.org.lotza" />
+116-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:83:9-65
+116-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:83:18-62
+117        <package android:name="com.whatsapp" />
+117-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:84:9-48
+117-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:84:18-45
+118        <package android:name="in.amazon.mShop.android.shopping" />
+118-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:85:9-68
+118-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:85:18-65
+119        <package android:name="in.cointab.app" />
+119-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:86:9-50
+119-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:86:18-47
+120        <package android:name="in.org.npci.upiapp" />
+120-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:87:9-54
+120-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:87:18-51
+121        <package android:name="money.bullet" />
+121-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:88:9-48
+121-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:88:18-45
+122        <package android:name="net.one97.paytm" />
+122-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:89:9-51
+122-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:89:18-48
+123
+124        <intent>
+124-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:11:9-17:18
+125            <action android:name="android.intent.action.VIEW" />
+125-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-65
+125-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-62
+126
+127            <data
+127-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+128                android:mimeType="*/*"
+128-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
+129                android:scheme="*" />
+130        </intent>
+131        <intent>
+131-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:18:9-27:18
+132            <action android:name="android.intent.action.VIEW" />
+132-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-65
+132-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-62
+133
+134            <category android:name="android.intent.category.BROWSABLE" />
+134-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:21:13-74
+134-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:21:23-71
+135
+136            <data
+136-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+137                android:host="pay"
+138                android:mimeType="*/*"
+138-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
+139                android:scheme="upi" />
+140        </intent>
+141        <intent>
+141-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:28:9-30:18
+142            <action android:name="android.intent.action.MAIN" />
+142-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:29:13-65
+142-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:29:21-62
+143        </intent>
+144        <intent>
+144-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:31:9-35:18
+145            <action android:name="android.intent.action.SEND" />
+145-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:32:13-65
+145-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:32:21-62
+146
+147            <data android:mimeType="*/*" />
+147-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+147-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
+148        </intent>
+149        <intent>
+149-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:36:9-38:18
+150            <action android:name="rzp.device_token.share" />
+150-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:37:13-61
+150-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:37:21-58
+151        </intent>
+152        <intent>
+152-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
+153            <action android:name="android.media.browse.MediaBrowserService" />
+153-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+153-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
+154        </intent>
+155        <intent>
+155-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
+156            <action android:name="androidx.media2.session.MediaSessionService" />
+156-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+156-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
+157        </intent>
+158        <intent>
+158-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
+159            <action android:name="androidx.media2.session.MediaLibraryService" />
+159-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+159-->[androidx.media2:media2-session:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\1be188cc204a5912b659959319d27022\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
+160        </intent>
+161    </queries>
+162
+163    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+163-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-89
+163-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-86
+164    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+164-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\46c61ef1f91573d93c6bdc31aebbe445\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+164-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\46c61ef1f91573d93c6bdc31aebbe445\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+165    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+165-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\d4a203de4c78bfc7798e99f2f36b9624\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+165-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\d4a203de4c78bfc7798e99f2f36b9624\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+166
+167    <uses-feature
+167-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\stabc\.gradle\caches\transforms-3\0099a1488836718ceb2bc283856131c2\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+168        android:glEsVersion="0x00020000"
+168-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\stabc\.gradle\caches\transforms-3\0099a1488836718ceb2bc283856131c2\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+169        android:required="true" />
+169-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\stabc\.gradle\caches\transforms-3\0099a1488836718ceb2bc283856131c2\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+170
+171    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+171-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+171-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+172    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+172-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+172-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:22-74
+173
+174    <permission
+174-->[androidx.core:core:1.9.0] C:\Users\stabc\.gradle\caches\transforms-3\6e0b64aa2d5e6f5a0a756508e2125771\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+175        android:name="com.cloudyml.cloudymlapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+175-->[androidx.core:core:1.9.0] C:\Users\stabc\.gradle\caches\transforms-3\6e0b64aa2d5e6f5a0a756508e2125771\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+176        android:protectionLevel="signature" />
+176-->[androidx.core:core:1.9.0] C:\Users\stabc\.gradle\caches\transforms-3\6e0b64aa2d5e6f5a0a756508e2125771\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+177
+178    <uses-permission android:name="com.cloudyml.cloudymlapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- for android -->
+178-->[androidx.core:core:1.9.0] C:\Users\stabc\.gradle\caches\transforms-3\6e0b64aa2d5e6f5a0a756508e2125771\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+178-->[androidx.core:core:1.9.0] C:\Users\stabc\.gradle\caches\transforms-3\6e0b64aa2d5e6f5a0a756508e2125771\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+179    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+180    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+181    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+182    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+183    <!-- for Samsung -->
+184    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+184-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+184-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+185    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+185-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+185-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+186    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+186-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+186-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+187    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+187-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+187-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+188    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+188-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+188-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+189    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+189-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+189-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+190    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+190-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+190-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+191    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+191-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+191-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+192    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+192-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+192-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+193    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+193-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+193-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+194    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+194-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+194-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+195    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+195-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+195-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+196    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+196-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+196-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+197    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+197-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+197-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+198    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+198-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+198-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+199    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/> -->
+199-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+199-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\stabc\.gradle\caches\transforms-3\1fd6d607a4fef28d8c948bc4d2c2cdad\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+200    <application
+201        android:name="android.app.Application"
+202        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+202-->[androidx.core:core:1.9.0] C:\Users\stabc\.gradle\caches\transforms-3\6e0b64aa2d5e6f5a0a756508e2125771\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+203        android:debuggable="true"
+204        android:icon="@mipmap/launcher_icon"
+205        android:label="Dataly"
+206        android:usesCleartextTraffic="true" >
+207        <activity
+208            android:name="com.cloudyml.cloudymlapp.MainActivity"
+209            android:allowBackup="false"
+210            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+211            android:exported="true"
+212            android:fullBackupOnly="false"
+213            android:hardwareAccelerated="true"
+214            android:launchMode="singleTop"
+215            android:theme="@style/LaunchTheme"
+216            android:windowSoftInputMode="adjustResize" >
+217
+218            <!--
+219                 Specifies an Android theme to apply to this Activity as soon as
+220                 the Android process has started. This theme is visible to the user
+221                 while the Flutter UI initializes. After that, this theme continues
+222                 to determine the Window background behind the Flutter UI.
+223            -->
+224            <meta-data
+225                android:name="io.flutter.embedding.android.NormalTheme"
+226                android:resource="@style/NormalTheme" />
+227
+228            <intent-filter>
+229                <action android:name="android.intent.action.MAIN" />
+229-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:29:13-65
+229-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:29:21-62
+230
+231                <category android:name="android.intent.category.LAUNCHER" />
+232            </intent-filter>
+233        </activity>
+234        <!--
+235             Don't delete the meta-data below.
+236             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+237        -->
+238        <meta-data
+239            android:name="flutterEmbedding"
+240            android:value="2" />
+241        <meta-data
+242            android:name="com.google.firebase.messaging.default_notification_channel_id"
+243            android:value="CloudyML" />
+244
+245        <service
+245-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+246            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+246-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+247            android:exported="false"
+247-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+248            android:permission="android.permission.BIND_JOB_SERVICE" />
+248-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+249        <service
+249-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+250            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+250-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+251            android:exported="false" >
+251-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+252            <intent-filter>
+252-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+253                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+253-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+253-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+254            </intent-filter>
+255        </service>
+256
+257        <receiver
+257-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+258            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+258-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+259            android:exported="true"
+259-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+260            android:permission="com.google.android.c2dm.permission.SEND" >
+260-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+261            <intent-filter>
+261-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+262                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+262-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+262-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+263            </intent-filter>
+264        </receiver>
+265
+266        <service
+266-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
+267            android:name="com.google.firebase.components.ComponentDiscoveryService"
+267-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
+268            android:directBootAware="true"
+268-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+269            android:exported="false" >
+269-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:68:13-37
+270            <meta-data
+270-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+271                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+271-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+272                android:value="com.google.firebase.components.ComponentRegistrar" />
+272-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+273            <meta-data
+273-->[:cloud_firestore] D:\dataly_mobile\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+274                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+274-->[:cloud_firestore] D:\dataly_mobile\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+275                android:value="com.google.firebase.components.ComponentRegistrar" />
+275-->[:cloud_firestore] D:\dataly_mobile\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+276            <meta-data
+276-->[:firebase_dynamic_links] D:\dataly_mobile\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
+277                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+277-->[:firebase_dynamic_links] D:\dataly_mobile\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-131
+278                android:value="com.google.firebase.components.ComponentRegistrar" />
+278-->[:firebase_dynamic_links] D:\dataly_mobile\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
+279            <meta-data
+279-->[:firebase_analytics] D:\dataly_mobile\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:85
+280                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+280-->[:firebase_analytics] D:\dataly_mobile\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-128
+281                android:value="com.google.firebase.components.ComponentRegistrar" />
+281-->[:firebase_analytics] D:\dataly_mobile\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-82
+282            <meta-data
+282-->[:firebase_auth] D:\dataly_mobile\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+283                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+283-->[:firebase_auth] D:\dataly_mobile\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+284                android:value="com.google.firebase.components.ComponentRegistrar" />
+284-->[:firebase_auth] D:\dataly_mobile\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+285            <meta-data
+285-->[:firebase_storage] D:\dataly_mobile\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+286                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+286-->[:firebase_storage] D:\dataly_mobile\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
+287                android:value="com.google.firebase.components.ComponentRegistrar" />
+287-->[:firebase_storage] D:\dataly_mobile\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+288            <meta-data
+288-->[:firebase_core] D:\dataly_mobile\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+289                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+289-->[:firebase_core] D:\dataly_mobile\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+290                android:value="com.google.firebase.components.ComponentRegistrar" />
+290-->[:firebase_core] D:\dataly_mobile\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+291            <meta-data
+291-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:69:13-71:85
+292                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+292-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:70:17-109
+293                android:value="com.google.firebase.components.ComponentRegistrar" />
+293-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:71:17-82
+294            <meta-data
+294-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\46c61ef1f91573d93c6bdc31aebbe445\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+295                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+295-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\46c61ef1f91573d93c6bdc31aebbe445\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+296                android:value="com.google.firebase.components.ComponentRegistrar" />
+296-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\46c61ef1f91573d93c6bdc31aebbe445\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+297            <meta-data
+297-->[com.google.firebase:firebase-firestore:24.7.0] C:\Users\stabc\.gradle\caches\transforms-3\23720ec0b336a23ff768ec5ca2ca5fa7\transformed\jetified-firebase-firestore-24.7.0\AndroidManifest.xml:19:13-21:85
+298                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+298-->[com.google.firebase:firebase-firestore:24.7.0] C:\Users\stabc\.gradle\caches\transforms-3\23720ec0b336a23ff768ec5ca2ca5fa7\transformed\jetified-firebase-firestore-24.7.0\AndroidManifest.xml:20:17-111
+299                android:value="com.google.firebase.components.ComponentRegistrar" />
+299-->[com.google.firebase:firebase-firestore:24.7.0] C:\Users\stabc\.gradle\caches\transforms-3\23720ec0b336a23ff768ec5ca2ca5fa7\transformed\jetified-firebase-firestore-24.7.0\AndroidManifest.xml:21:17-82
+300            <meta-data
+300-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:55:13-57:85
+301                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+301-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:56:17-119
+302                android:value="com.google.firebase.components.ComponentRegistrar" />
+302-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:57:17-82
+303            <meta-data
+303-->[com.google.firebase:firebase-dynamic-links:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\1cc421a1f32f7ea151f676d3bef92161\transformed\jetified-firebase-dynamic-links-21.1.0\AndroidManifest.xml:26:13-28:85
+304                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+304-->[com.google.firebase:firebase-dynamic-links:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\1cc421a1f32f7ea151f676d3bef92161\transformed\jetified-firebase-dynamic-links-21.1.0\AndroidManifest.xml:27:17-133
+305                android:value="com.google.firebase.components.ComponentRegistrar" />
+305-->[com.google.firebase:firebase-dynamic-links:21.1.0] C:\Users\stabc\.gradle\caches\transforms-3\1cc421a1f32f7ea151f676d3bef92161\transformed\jetified-firebase-dynamic-links-21.1.0\AndroidManifest.xml:28:17-82
+306            <meta-data
+306-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\stabc\.gradle\caches\transforms-3\087ec86e4e5bfa41fdaba7e3a2d45519\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:32:13-34:85
+307                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+307-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\stabc\.gradle\caches\transforms-3\087ec86e4e5bfa41fdaba7e3a2d45519\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:33:17-107
+308                android:value="com.google.firebase.components.ComponentRegistrar" />
+308-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\stabc\.gradle\caches\transforms-3\087ec86e4e5bfa41fdaba7e3a2d45519\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:34:17-82
+309            <meta-data
+309-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\d4a203de4c78bfc7798e99f2f36b9624\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+310                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+310-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\d4a203de4c78bfc7798e99f2f36b9624\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+311                android:value="com.google.firebase.components.ComponentRegistrar" />
+311-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\d4a203de4c78bfc7798e99f2f36b9624\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+312            <meta-data
+312-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\stabc\.gradle\caches\transforms-3\6f5e5a4280dd436b7277163a90e7fb8d\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+313                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+313-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\stabc\.gradle\caches\transforms-3\6f5e5a4280dd436b7277163a90e7fb8d\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+314                android:value="com.google.firebase.components.ComponentRegistrar" />
+314-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\stabc\.gradle\caches\transforms-3\6f5e5a4280dd436b7277163a90e7fb8d\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+315            <meta-data
+315-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\stabc\.gradle\caches\transforms-3\e768ece536d38c55dfcba34322436e2f\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+316                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+316-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\stabc\.gradle\caches\transforms-3\e768ece536d38c55dfcba34322436e2f\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+317                android:value="com.google.firebase.components.ComponentRegistrar" />
+317-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\stabc\.gradle\caches\transforms-3\e768ece536d38c55dfcba34322436e2f\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+318        </service>
+319
+320        <provider
+320-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+321            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+321-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+322            android:authorities="com.cloudyml.cloudymlapp.flutterfirebasemessaginginitprovider"
+322-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+323            android:exported="false"
+323-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+324            android:initOrder="99" />
+324-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+325
+326        <receiver
+326-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+327            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+327-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-97
+328            android:exported="false" />
+328-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+329        <receiver
+329-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-28:20
+330            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+330-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-101
+331            android:exported="false" >
+331-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+332            <intent-filter>
+332-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-27:29
+333                <action android:name="android.intent.action.BOOT_COMPLETED" />
+333-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:17-79
+333-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:25-76
+334                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+334-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-84
+334-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-81
+335                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+335-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-82
+335-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-79
+336                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+336-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
+336-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
+337            </intent-filter>
+338        </receiver>
+339
+340        <provider
+340-->[:share_extend] D:\dataly_mobile\build\share_extend\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-15:20
+341            android:name="com.zt.shareextend.ShareExtendProvider"
+341-->[:share_extend] D:\dataly_mobile\build\share_extend\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-66
+342            android:authorities="com.cloudyml.cloudymlapp.shareextend.fileprovider"
+342-->[:share_extend] D:\dataly_mobile\build\share_extend\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-76
+343            android:exported="false"
+343-->[:share_extend] D:\dataly_mobile\build\share_extend\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+344            android:grantUriPermissions="true" >
+344-->[:share_extend] D:\dataly_mobile\build\share_extend\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+345        </provider>
+346
+347        <activity
+347-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-20:47
+348            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+348-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-104
+349            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+349-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-137
+350            android:exported="false"
+350-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+351            android:theme="@style/AppTheme" />
+351-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-44
+352        <activity
+352-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-24:55
+353            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+353-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-112
+354            android:exported="false"
+354-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
+355            android:theme="@style/ThemeTransparent" />
+355-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-52
+356        <activity
+356-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-28:55
+357            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+357-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-106
+358            android:exported="false"
+358-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-37
+359            android:theme="@style/ThemeTransparent" />
+359-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-52
+360        <activity
+360-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-33:55
+361            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+361-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-126
+362            android:exported="false"
+362-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-37
+363            android:launchMode="singleInstance"
+363-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-48
+364            android:theme="@style/ThemeTransparent" />
+364-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-52
+365        <activity
+365-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-38:55
+366            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+366-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-120
+367            android:exported="false"
+367-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-37
+368            android:launchMode="singleInstance"
+368-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-48
+369            android:theme="@style/ThemeTransparent" />
+369-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-52
+370
+371        <receiver
+371-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:40
+372            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+372-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-111
+373            android:enabled="true"
+373-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-35
+374            android:exported="false" />
+374-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-37
+375
+376        <meta-data
+376-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:36
+377            android:name="io.flutter.embedded_views_preview"
+377-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-61
+378            android:value="true" />
+378-->[:flutter_inappwebview] D:\dataly_mobile\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-33
+379
+380        <provider
+380-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+381            android:name="io.flutter.plugins.share.ShareFileProvider"
+381-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-70
+382            android:authorities="com.cloudyml.cloudymlapp.flutter.share_provider"
+382-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+383            android:exported="false"
+383-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+384            android:grantUriPermissions="true" >
+384-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+385            <meta-data
+385-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:68
+386                android:name="android.support.FILE_PROVIDER_PATHS"
+386-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+387                android:resource="@xml/flutter_share_file_paths" />
+387-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-65
+388        </provider>
+389        <provider
+389-->[:image_picker_android] D:\dataly_mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+390            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+390-->[:image_picker_android] D:\dataly_mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+391            android:authorities="com.cloudyml.cloudymlapp.flutter.image_provider"
+391-->[:image_picker_android] D:\dataly_mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+392            android:exported="false"
+392-->[:image_picker_android] D:\dataly_mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+393            android:grantUriPermissions="true" >
+393-->[:image_picker_android] D:\dataly_mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+394            <meta-data
+394-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:68
+395                android:name="android.support.FILE_PROVIDER_PATHS"
+395-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+396                android:resource="@xml/flutter_image_picker_file_paths" />
+396-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-65
+397        </provider>
+398
+399        <receiver
+399-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:39
+400            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+400-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-89
+401            android:exported="true" />
+401-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-36
+402        <receiver
+402-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-20:39
+403            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+403-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-92
+404            android:exported="true" />
+404-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-36
+405        <receiver
+405-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-23:39
+406            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+406-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-92
+407            android:exported="true" />
+407-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+408        <receiver
+408-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-38:20
+409            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+409-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-87
+410            android:enabled="true"
+410-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-35
+411            android:exported="true" >
+411-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-36
+412            <intent-filter>
+412-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37:29
+413                <category android:name="android.intent.category.DEFAULT" />
+413-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+413-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+414
+415                <action android:name="android.intent.action.BOOT_COMPLETED" />
+415-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:17-79
+415-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:25-76
+416                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+416-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-86
+416-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:32:25-83
+417                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+417-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-84
+417-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-81
+418                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+418-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-82
+418-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-79
+419                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+419-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
+419-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
+420                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+420-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:36:17-107
+420-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:36:25-104
+421            </intent-filter>
+422        </receiver>
+423
+424        <service
+424-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:72
+425            android:name="me.carda.awesome_notifications.DartBackgroundService"
+425-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-80
+426            android:exported="false"
+426-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-37
+427            android:permission="android.permission.BIND_JOB_SERVICE" />
+427-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-69
+428        <service
+428-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:44:9-49:43
+429            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+429-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-90
+430            android:enabled="true"
+430-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-35
+431            android:exported="false"
+431-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-37
+432            android:foregroundServiceType="phoneCall"
+432-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:48:13-54
+433            android:stopWithTask="true" />
+433-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-40
+434
+435        <activity
+435-->[:url_launcher_android] D:\dataly_mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+436            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+436-->[:url_launcher_android] D:\dataly_mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+437            android:exported="false"
+437-->[:url_launcher_android] D:\dataly_mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+438            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+438-->[:url_launcher_android] D:\dataly_mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+439
+440        <provider
+440-->[:open_filex] D:\dataly_mobile\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-27:20
+441            android:name="com.crazecoder.openfile.FileProvider"
+441-->[:open_filex] D:\dataly_mobile\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-64
+442            android:authorities="com.cloudyml.cloudymlapp.fileProvider.com.crazecoder.openfile"
+442-->[:open_filex] D:\dataly_mobile\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-88
+443            android:exported="false"
+443-->[:open_filex] D:\dataly_mobile\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+444            android:grantUriPermissions="true" >
+444-->[:open_filex] D:\dataly_mobile\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-47
+445            <meta-data
+445-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:68
+446                android:name="android.support.FILE_PROVIDER_PATHS"
+446-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+447                android:resource="@xml/filepaths" />
+447-->[:share] D:\dataly_mobile\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-65
+448        </provider>
+449
+450        <receiver
+450-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:42:9-49:20
+451            android:name="com.razorpay.RzpTokenReceiver"
+451-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:43:13-57
+452            android:exported="true" >
+452-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:44:13-36
+453            <intent-filter>
+453-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:46:13-48:29
+454                <action android:name="rzp.device_token.share" />
+454-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:37:13-61
+454-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:37:21-58
+455            </intent-filter>
+456        </receiver>
+457
+458        <activity
+458-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:51:9-59:20
+459            android:name="com.razorpay.CheckoutActivity"
+459-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:52:13-57
+460            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+460-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:53:13-83
+461            android:exported="false"
+461-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:54:13-37
+462            android:theme="@style/CheckoutTheme" >
+462-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:55:13-49
+463            <intent-filter>
+463-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:56:13-58:29
+464                <action android:name="android.intent.action.MAIN" />
+464-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:29:13-65
+464-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:29:21-62
+465            </intent-filter>
+466        </activity>
+467
+468        <meta-data
+468-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:61:9-63:58
+469            android:name="com.razorpay.plugin.googlepay_all"
+469-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:62:13-61
+470            android:value="com.razorpay.RzpGpayMerged" />
+470-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:63:13-55
+471
+472        <activity
+472-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:23:9-27:75
+473            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+473-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:24:13-93
+474            android:excludeFromRecents="true"
+474-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:25:13-46
+475            android:exported="false"
+475-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:26:13-37
+476            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+476-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:27:13-72
+477        <!--
+478            Service handling Google Sign-In user revocation. For apps that do not integrate with
+479            Google Sign-In, this service will never be started.
+480        -->
+481        <service
+481-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:33:9-37:51
+482            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+482-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:34:13-89
+483            android:exported="true"
+483-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:35:13-36
+484            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+484-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:36:13-107
+485            android:visibleToInstantApps="true" />
+485-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\stabc\.gradle\caches\transforms-3\544af0a940879cd97d9f4d0255f77e76\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:37:13-48
+486
+487        <activity
+487-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:29:9-46:20
+488            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+488-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:30:13-80
+489            android:excludeFromRecents="true"
+489-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:31:13-46
+490            android:exported="true"
+490-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:32:13-36
+491            android:launchMode="singleTask"
+491-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:33:13-44
+492            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+492-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:34:13-72
+493            <intent-filter>
+493-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:35:13-45:29
+494                <action android:name="android.intent.action.VIEW" />
+494-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-65
+494-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-62
+495
+496                <category android:name="android.intent.category.DEFAULT" />
+496-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+496-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+497                <category android:name="android.intent.category.BROWSABLE" />
+497-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:21:13-74
+497-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:21:23-71
+498
+499                <data
+499-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+500                    android:host="firebase.auth"
+501                    android:path="/"
+502                    android:scheme="genericidp" />
+503            </intent-filter>
+504        </activity>
+505        <activity
+505-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:47:9-64:20
+506            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+506-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:48:13-79
+507            android:excludeFromRecents="true"
+507-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:49:13-46
+508            android:exported="true"
+508-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:50:13-36
+509            android:launchMode="singleTask"
+509-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:51:13-44
+510            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+510-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:52:13-72
+511            <intent-filter>
+511-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\stabc\.gradle\caches\transforms-3\52222c930f451a48bdb52adcc018b197\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:53:13-63:29
+512                <action android:name="android.intent.action.VIEW" />
+512-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-65
+512-->[:upi_plugin] D:\dataly_mobile\build\upi_plugin\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-62
+513
+514                <category android:name="android.intent.category.DEFAULT" />
+514-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+514-->[:awesome_notifications] D:\dataly_mobile\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+515                <category android:name="android.intent.category.BROWSABLE" />
+515-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:21:13-74
+515-->[com.razorpay:checkout:1.6.35] C:\Users\stabc\.gradle\caches\transforms-3\38c04d51ea10a5e21ed4e901804baf44\transformed\jetified-checkout-1.6.35\AndroidManifest.xml:21:23-71
+516
+517                <data
+517-->[:file_picker] D:\dataly_mobile\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+518                    android:host="firebase.auth"
+519                    android:path="/"
+520                    android:scheme="recaptcha" />
+521            </intent-filter>
+522        </activity>
+523
+524        <receiver
+524-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:31:9-38:20
+525            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+525-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:32:13-78
+526            android:exported="true"
+526-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:33:13-36
+527            android:permission="com.google.android.c2dm.permission.SEND" >
+527-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:34:13-73
+528            <intent-filter>
+528-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+529                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+529-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+529-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+530            </intent-filter>
+531        </receiver>
+532        <!--
+533             FirebaseMessagingService performs security checks at runtime,
+534             but set to not exported to explicitly avoid allowing another app to call it.
+535        -->
+536        <service
+536-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:44:9-51:19
+537            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+537-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:45:13-82
+538            android:directBootAware="true"
+538-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:46:13-43
+539            android:exported="false" >
+539-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\stabc\.gradle\caches\transforms-3\296ee444f6db4d12a6c9b1b8e8721a0f\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:47:13-37
+540            <intent-filter android:priority="-500" >
+540-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+541                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+541-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+541-->[:firebase_messaging] D:\dataly_mobile\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+542            </intent-filter>
+543        </service>
+544
+545        <provider
+545-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+546            android:name="com.google.firebase.provider.FirebaseInitProvider"
+546-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+547            android:authorities="com.cloudyml.cloudymlapp.firebaseinitprovider"
+547-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+548            android:directBootAware="true"
+548-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+549            android:exported="false"
+549-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+550            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+550-->[com.google.firebase:firebase-common:20.3.3] C:\Users\stabc\.gradle\caches\transforms-3\c1981f3653e8f69400cf061a7f906bb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+551        <uses-library
+551-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\stabc\.gradle\caches\transforms-3\0099a1488836718ceb2bc283856131c2\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+552            android:name="org.apache.http.legacy"
+552-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\stabc\.gradle\caches\transforms-3\0099a1488836718ceb2bc283856131c2\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+553            android:required="false" />
+553-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\stabc\.gradle\caches\transforms-3\0099a1488836718ceb2bc283856131c2\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+554
+555        <activity
+555-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\stabc\.gradle\caches\transforms-3\6945dafc8be38a7b0368b4c4d638c1db\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+556            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+556-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\stabc\.gradle\caches\transforms-3\6945dafc8be38a7b0368b4c4d638c1db\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+557            android:exported="false"
+557-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\stabc\.gradle\caches\transforms-3\6945dafc8be38a7b0368b4c4d638c1db\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+558            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+558-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\stabc\.gradle\caches\transforms-3\6945dafc8be38a7b0368b4c4d638c1db\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+559
+560        <receiver
+560-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+561            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+561-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+562            android:enabled="true"
+562-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+563            android:exported="false" >
+563-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+564        </receiver>
+565
+566        <service
+566-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+567            android:name="com.google.android.gms.measurement.AppMeasurementService"
+567-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+568            android:enabled="true"
+568-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+569            android:exported="false" />
+569-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+570        <service
+570-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+571            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+571-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+572            android:enabled="true"
+572-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+573            android:exported="false"
+573-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+574            android:permission="android.permission.BIND_JOB_SERVICE" />
+574-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\stabc\.gradle\caches\transforms-3\6811b6f99d0f0e9737acf22b58e08bdb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+575
+576        <meta-data
+576-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\stabc\.gradle\caches\transforms-3\0ed829fdbfbf6781dedc7a6728fe4560\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+577            android:name="com.google.android.gms.version"
+577-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\stabc\.gradle\caches\transforms-3\0ed829fdbfbf6781dedc7a6728fe4560\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+578            android:value="@integer/google_play_services_version" />
+578-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\stabc\.gradle\caches\transforms-3\0ed829fdbfbf6781dedc7a6728fe4560\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+579
+580        <uses-library
+580-->[androidx.window:window:1.0.0-beta04] C:\Users\stabc\.gradle\caches\transforms-3\49780b7b760899c7976ce1b129497cba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+581            android:name="androidx.window.extensions"
+581-->[androidx.window:window:1.0.0-beta04] C:\Users\stabc\.gradle\caches\transforms-3\49780b7b760899c7976ce1b129497cba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+582            android:required="false" />
+582-->[androidx.window:window:1.0.0-beta04] C:\Users\stabc\.gradle\caches\transforms-3\49780b7b760899c7976ce1b129497cba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+583        <uses-library
+583-->[androidx.window:window:1.0.0-beta04] C:\Users\stabc\.gradle\caches\transforms-3\49780b7b760899c7976ce1b129497cba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+584            android:name="androidx.window.sidecar"
+584-->[androidx.window:window:1.0.0-beta04] C:\Users\stabc\.gradle\caches\transforms-3\49780b7b760899c7976ce1b129497cba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+585            android:required="false" />
+585-->[androidx.window:window:1.0.0-beta04] C:\Users\stabc\.gradle\caches\transforms-3\49780b7b760899c7976ce1b129497cba\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+586
+587        <provider
+587-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+588            android:name="androidx.startup.InitializationProvider"
+588-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
+589            android:authorities="com.cloudyml.cloudymlapp.androidx-startup"
+589-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
+590            android:exported="false" >
+590-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
+591            <meta-data
+591-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+592                android:name="androidx.work.WorkManagerInitializer"
+592-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+593                android:value="androidx.startup" />
+593-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+594            <meta-data
+594-->[androidx.emoji2:emoji2:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\8ae7432fc8342097435f7ffa74e8fdc0\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+595                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+595-->[androidx.emoji2:emoji2:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\8ae7432fc8342097435f7ffa74e8fdc0\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+596                android:value="androidx.startup" />
+596-->[androidx.emoji2:emoji2:1.2.0] C:\Users\stabc\.gradle\caches\transforms-3\8ae7432fc8342097435f7ffa74e8fdc0\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+597            <meta-data
+597-->[androidx.lifecycle:lifecycle-process:2.5.1] C:\Users\stabc\.gradle\caches\transforms-3\4debaad400b1a401c8d2f8f0ffdd0d38\transformed\jetified-lifecycle-process-2.5.1\AndroidManifest.xml:31:13-33:52
+598                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+598-->[androidx.lifecycle:lifecycle-process:2.5.1] C:\Users\stabc\.gradle\caches\transforms-3\4debaad400b1a401c8d2f8f0ffdd0d38\transformed\jetified-lifecycle-process-2.5.1\AndroidManifest.xml:32:17-78
+599                android:value="androidx.startup" />
+599-->[androidx.lifecycle:lifecycle-process:2.5.1] C:\Users\stabc\.gradle\caches\transforms-3\4debaad400b1a401c8d2f8f0ffdd0d38\transformed\jetified-lifecycle-process-2.5.1\AndroidManifest.xml:33:17-49
+600        </provider>
+601
+602        <service
+602-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+603            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+603-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+604            android:directBootAware="false"
+604-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+605            android:enabled="@bool/enable_system_alarm_service_default"
+605-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+606            android:exported="false" />
+606-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+607        <service
+607-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+608            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+608-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+609            android:directBootAware="false"
+609-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+610            android:enabled="@bool/enable_system_job_service_default"
+610-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+611            android:exported="true"
+611-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+612            android:permission="android.permission.BIND_JOB_SERVICE" />
+612-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+613        <service
+613-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+614            android:name="androidx.work.impl.foreground.SystemForegroundService"
+614-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+615            android:directBootAware="false"
+615-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+616            android:enabled="@bool/enable_system_foreground_service_default"
+616-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+617            android:exported="false" />
+617-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+618
+619        <receiver
+619-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+620            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+620-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+621            android:directBootAware="false"
+621-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+622            android:enabled="true"
+622-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+623            android:exported="false" />
+623-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+624        <receiver
+624-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+625            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+625-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+626            android:directBootAware="false"
+626-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+627            android:enabled="false"
+627-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+628            android:exported="false" >
+628-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+629            <intent-filter>
+629-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+630                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+630-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+630-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+631                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+631-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+631-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+632            </intent-filter>
+633        </receiver>
+634        <receiver
+634-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+635            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+635-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+636            android:directBootAware="false"
+636-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+637            android:enabled="false"
+637-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+638            android:exported="false" >
+638-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+639            <intent-filter>
+639-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+640                <action android:name="android.intent.action.BATTERY_OKAY" />
+640-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+640-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+641                <action android:name="android.intent.action.BATTERY_LOW" />
+641-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+641-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+642            </intent-filter>
+643        </receiver>
+644        <receiver
+644-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+645            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+645-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+646            android:directBootAware="false"
+646-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+647            android:enabled="false"
+647-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+648            android:exported="false" >
+648-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+649            <intent-filter>
+649-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+650                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+650-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+650-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+651                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+651-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+651-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+652            </intent-filter>
+653        </receiver>
+654        <receiver
+654-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+655            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+655-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+656            android:directBootAware="false"
+656-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+657            android:enabled="false"
+657-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+658            android:exported="false" >
+658-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+659            <intent-filter>
+659-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+660                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+660-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+660-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+661            </intent-filter>
+662        </receiver>
+663        <receiver
+663-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+664            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+664-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+665            android:directBootAware="false"
+665-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+666            android:enabled="false"
+666-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+667            android:exported="false" >
+667-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+668            <intent-filter>
+668-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+669                <action android:name="android.intent.action.BOOT_COMPLETED" />
+669-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:17-79
+669-->[:flutter_local_notifications] D:\dataly_mobile\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:25-76
+670                <action android:name="android.intent.action.TIME_SET" />
+670-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+670-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+671                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+671-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+671-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+672            </intent-filter>
+673        </receiver>
+674        <receiver
+674-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+675            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+675-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+676            android:directBootAware="false"
+676-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+677            android:enabled="@bool/enable_system_alarm_service_default"
+677-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+678            android:exported="false" >
+678-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+679            <intent-filter>
+679-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+680                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+680-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+680-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+681            </intent-filter>
+682        </receiver>
+683        <receiver
+683-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+684            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+684-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+685            android:directBootAware="false"
+685-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+686            android:enabled="true"
+686-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+687            android:exported="true"
+687-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+688            android:permission="android.permission.DUMP" >
+688-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+689            <intent-filter>
+689-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+690                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+690-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+690-->[androidx.work:work-runtime:2.7.1] C:\Users\stabc\.gradle\caches\transforms-3\df3ffd2e1d99b91a9819a54cbeef1748\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+691            </intent-filter>
+692        </receiver>
+693
+694        <service
+694-->[androidx.room:room-runtime:2.2.5] C:\Users\stabc\.gradle\caches\transforms-3\e08aa126836f2d2adc26769b9a849bf5\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+695            android:name="androidx.room.MultiInstanceInvalidationService"
+695-->[androidx.room:room-runtime:2.2.5] C:\Users\stabc\.gradle\caches\transforms-3\e08aa126836f2d2adc26769b9a849bf5\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+696            android:directBootAware="true"
+696-->[androidx.room:room-runtime:2.2.5] C:\Users\stabc\.gradle\caches\transforms-3\e08aa126836f2d2adc26769b9a849bf5\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+697            android:exported="false" />
+697-->[androidx.room:room-runtime:2.2.5] C:\Users\stabc\.gradle\caches\transforms-3\e08aa126836f2d2adc26769b9a849bf5\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+698        <service
+698-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\62f045537e8b28578c23c72065a9b564\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+699            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+699-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\62f045537e8b28578c23c72065a9b564\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+700            android:exported="false" >
+700-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\62f045537e8b28578c23c72065a9b564\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+701            <meta-data
+701-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\62f045537e8b28578c23c72065a9b564\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+702                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+702-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\62f045537e8b28578c23c72065a9b564\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+703                android:value="cct" />
+703-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\62f045537e8b28578c23c72065a9b564\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+704        </service>
+705        <service
+705-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+706            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+706-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+707            android:exported="false"
+707-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+708            android:permission="android.permission.BIND_JOB_SERVICE" >
+708-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+709        </service>
+710
+711        <receiver
+711-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+712            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+712-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+713            android:exported="false" />
+713-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\stabc\.gradle\caches\transforms-3\36301ee9ef446cd41a681339b8b4b0eb\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+714    </application>
+715
+716</manifest>
