@@ -184,7 +184,7 @@ class _VideoScreenState extends State<VideoScreen> {
     int total = 0, count = 0;
 
     await FirebaseFirestore.instance
-        .collection("courseprogress")
+        .collection("courseprogress_dataly")
         .doc(FirebaseAuth.instance.currentUser!.uid)
         .get()
         .then((value) {
@@ -208,7 +208,7 @@ class _VideoScreenState extends State<VideoScreen> {
     });
 
     await FirebaseFirestore.instance
-        .collection("courseprogress")
+        .collection("courseprogress_dataly")
         .doc(FirebaseAuth.instance.currentUser!.uid)
         .update({
       CourseID.toString(): listOfProgress,
@@ -391,7 +391,7 @@ class _VideoScreenState extends State<VideoScreen> {
   //
   //     CourseID != null
   //         ? FirebaseFirestore.instance
-  //             .collection("courseprogress")
+  //             .collection("courseprogress_dataly")
   //             .doc(FirebaseAuth.instance.currentUser!.uid)
   //             .update({
   //             CourseID.toString(): _getVideoPercentageList,
@@ -604,7 +604,7 @@ class _VideoScreenState extends State<VideoScreen> {
 
   deletetemprogress() async {
     await FirebaseFirestore.instance
-        .collection("courseprogress")
+        .collection("courseprogress_dataly")
         .where("email", isEqualTo: 'shubham@gamil.com')
         .get()
         .then((value) {
@@ -993,7 +993,7 @@ class _VideoScreenState extends State<VideoScreen> {
 
     if (courseType == 'video') {
       await FirebaseFirestore.instance
-          .collection("courseprogress")
+          .collection("courseprogress_dataly")
           .doc(FirebaseAuth.instance.currentUser!.uid)
           .get()
           .then((value) async {
@@ -1049,7 +1049,7 @@ class _VideoScreenState extends State<VideoScreen> {
             print("UUUUUUUUU $finalProgressData");
 
             await FirebaseFirestore.instance
-                .collection("courseprogress")
+                .collection("courseprogress_dataly")
                 .doc(FirebaseAuth.instance.currentUser!.uid)
                 .update({CourseID.toString(): finalProgressData});
 
@@ -1144,7 +1144,7 @@ class _VideoScreenState extends State<VideoScreen> {
             }
 
             await FirebaseFirestore.instance
-                .collection("courseprogress")
+                .collection("courseprogress_dataly")
                 .doc(FirebaseAuth.instance.currentUser!.uid)
                 .update({CourseID.toString(): data});
             print("finally  $data");
@@ -1174,7 +1174,7 @@ class _VideoScreenState extends State<VideoScreen> {
             print("**** $_initialVideoPercentageList");
             await getUserRole();
             await FirebaseFirestore.instance
-                .collection("courseprogress")
+                .collection("courseprogress_dataly")
                 .doc(FirebaseAuth.instance.currentUser!.uid.toString())
                 .update({
               CourseID.toString():
@@ -1210,7 +1210,7 @@ class _VideoScreenState extends State<VideoScreen> {
           print("**** $_initialVideoPercentageList");
           await getUserRole();
           await FirebaseFirestore.instance
-              .collection("courseprogress")
+              .collection("courseprogress_dataly")
               .doc(FirebaseAuth.instance.currentUser!.uid.toString())
               .set({
             CourseID.toString():

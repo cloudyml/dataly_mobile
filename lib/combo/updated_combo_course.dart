@@ -40,7 +40,7 @@ class _NewScreenState extends State<NewScreen> {
   var courseData = null;
   getPercentageOfCourse() async {
     var data = await FirebaseFirestore.instance
-        .collection("courseprogress")
+        .collection("courseprogress_dataly")
         .doc(FirebaseAuth.instance.currentUser!.uid)
         .get();
     setState(() {
@@ -140,7 +140,7 @@ class _NewScreenState extends State<NewScreen> {
   Future<String> getProgress(int index) async {
     try {
       var data = await FirebaseFirestore.instance
-          .collection("courseprogress")
+          .collection("courseprogress_dataly")
           .doc(FirebaseAuth.instance.currentUser!.uid)
           .get();
 

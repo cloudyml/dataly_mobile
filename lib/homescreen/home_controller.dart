@@ -16,7 +16,7 @@ class HomeController extends GetxController {
   final BuildContext context;
   HomeController({required this.context});
 
-  var numberOfLearners = '19000+ learners'.obs;
+  var numberOfLearners = ''.obs;
 
   var course = <CourseDetails>[].obs;
   var courses = [].obs;
@@ -32,6 +32,21 @@ class HomeController extends GetxController {
   var isAnnouncement = false.obs;
   var announcementMsg = ''.obs;
   var notificationBox = Hive.box('NotificationBox').obs;
+
+  getNumberOfLearners() async {
+    try {
+      await FirebaseFirestore.instance
+          .collection('Notice')
+          .doc('sessionExpiryDays')
+          .get()
+          .then((value) {
+        numberOfLearners.value = value.data()!['dataly_numberOfLearners'];
+        print("numberOfLearners = ${numberOfLearners.value}");
+      });
+    } catch (e) {
+      print('object = $e');
+    }
+  }
 
   getPercentageOfCourse() async {
     try {
@@ -56,7 +71,7 @@ class HomeController extends GetxController {
 
       try {
         await FirebaseFirestore.instance
-            .collection("courseprogress")
+            .collection("courseprogress_dataly")
             .doc(FirebaseAuth.instance.currentUser!.uid)
             .get()
             .then((value) {
@@ -121,12 +136,14 @@ class HomeController extends GetxController {
   setFeaturedCourse(List<CourseDetails> course) async {
     featuredCourse.clear();
     course.forEach((element) {
-      if (element.dataly_FcSerialNumber!.isNotEmpty && element.dataly_FcSerialNumber != null) {
+      if (element.dataly_FcSerialNumber!.isNotEmpty &&
+          element.dataly_FcSerialNumber != null) {
         featuredCourse.add(element);
       }
     });
     featuredCourse.sort((a, b) {
-      return int.parse(a.FcSerialNumber).compareTo(int.parse(b.FcSerialNumber));
+      return int.parse(a.dataly_FcSerialNumber!)
+          .compareTo(int.parse(b.dataly_FcSerialNumber!));
     });
   }
 
@@ -245,7 +262,7 @@ class HomeController extends GetxController {
     getPercentageOfCourse();
     setFeaturedCourse(course);
     dbCheckerForPayInParts();
-
+    getNumberOfLearners();
     showNotification();
 
     super.onInit();
@@ -296,7 +313,7 @@ getPercentageOfCourse() async {
 
     try {
       await FirebaseFirestore.instance
-          .collection("courseprogress")
+          .collection("courseprogress_dataly")
           .doc(FirebaseAuth.instance.currentUser!.uid)
           .get()
           .then((value) {

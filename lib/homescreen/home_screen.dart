@@ -283,13 +283,17 @@ class _NewHomeScreenState extends State<NewHomeScreen> {
                                               ),
                                             ),
                                             WidgetUtils().horizontalBox(10),
-                                            Text(
-                                                'Trusted by ${controller.numberOfLearners}',
-                                                style: TextStyle(
-                                                    fontSize: 15,
-                                                    fontWeight:
-                                                        FontWeight.normal,
-                                                    color: Colors.white)),
+                                            Obx(
+                                                    () {
+                                                return Text(
+                                                    'Trusted by ${controller.numberOfLearners.value}',
+                                                    style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                        color: Colors.white));
+                                              }
+                                            ),
                                           ],
                                         ),
                                       ),

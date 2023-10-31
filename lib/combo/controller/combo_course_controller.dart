@@ -43,7 +43,7 @@ class ComboCourseController extends GetxController {
     try{
 
        var data = await FirebaseFirestore.instance
-        .collection("courseprogress")
+        .collection("courseprogress_dataly")
         .doc(FirebaseAuth.instance.currentUser!.uid)
         .get();
 
