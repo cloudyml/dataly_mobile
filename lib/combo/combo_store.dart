@@ -30,6 +30,7 @@ import '../my_Courses.dart';
 
 class ComboStore extends StatefulWidget {
   final trialCourse;
+  final hideBottomSheet;
   // final international;
   final List<dynamic>? courses;
   final courseName;
@@ -41,6 +42,7 @@ class ComboStore extends StatefulWidget {
   ComboStore(
       {Key? key,
       this.courses,
+        this.hideBottomSheet,
       // this.international,
       this.courseName,
       this.id,
@@ -215,7 +217,8 @@ class _ComboStoreState extends State<ComboStore> with CouponCodeMixin {
     final width = MediaQuery.of(context).size.width;
     var horizontalScale = screenWidth / mockUpWidth;
     return Scaffold(
-      bottomSheet: widget.trialCourse != null && widget.trialCourse!
+      bottomSheet: widget.hideBottomSheet ? SizedBox()
+          : widget.trialCourse != null && widget.trialCourse!
           ? PayNowBottomSheetfeature(
               context: context,
               coursePrice: '₹${widget.courseP!}/-',

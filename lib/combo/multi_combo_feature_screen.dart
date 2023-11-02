@@ -23,6 +23,7 @@ class MultiComboFeatureScreen extends StatelessWidget {
       this.cID})
       : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
@@ -123,7 +124,7 @@ class MultiComboFeatureScreen extends StatelessWidget {
                               child: Container(
                                 width: constraints.maxWidth,
                                 height:
-                                    MediaQuery.of(context).size.height / 1.2,
+                                    MediaQuery.of(context).size.height / 1.3,
                                 child: ListView.builder(
                                     itemCount: controller.courseList.length,
                                     itemBuilder: (BuildContext context, index) {
@@ -268,6 +269,7 @@ class MultiComboFeatureScreen extends StatelessWidget {
                                                                   builder:
                                                                       (context) =>
                                                                           ComboStore(
+                                                                            hideBottomSheet: true,
                                                                     trialCourse:
                                                                         controller.courseList[index]
                                                                             [
@@ -304,12 +306,26 @@ class MultiComboFeatureScreen extends StatelessWidget {
                                                             } else {
                                                               final id = index
                                                                   .toString();
+                                                              print('courseName = ${controller.courseList[
+                                                              index]
+                                                              ['name']}');
                                                               Navigator.push(
                                                                 context,
                                                                 MaterialPageRoute(
                                                                     builder:
                                                                         (context) =>
-                                                                            const CatelogueScreen()),
+                                                                             CatelogueScreen(
+                                                                              courseImage: controller.courseList[
+                                                                              index]
+                                                                              ['image_url'],
+                                                                              description: controller.courseList[
+                                                                              index]
+                                                                              ['description'],
+                                                                              courseName: controller.courseList[
+                                                                              index]
+                                                                              ['name'],
+                                                                              hideBottomSheet: true,
+                                                                            )),
                                                               );
                                                               // GoRouter.of(context)
                                                               //     .pushNamed('catalogue', queryParams: {

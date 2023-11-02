@@ -815,21 +815,21 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             //     ),
             //   ),
             // ),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => AllCertificateScreen()));
-              },
-              child: ListTile(
-                title: Text('Certificates'),
-                leading: Icon(
-                  Icons.card_membership_outlined,
-                  color: HexColor('6153D3'),
-                ),
-              ),
-            ),
+            // InkWell(
+            //   onTap: () {
+            //     Navigator.push(
+            //         context,
+            //         MaterialPageRoute(
+            //             builder: (context) => AllCertificateScreen()));
+            //   },
+            //   child: ListTile(
+            //     title: Text('Certificates'),
+            //     leading: Icon(
+            //       Icons.card_membership_outlined,
+            //       color: HexColor('6153D3'),
+            //     ),
+            //   ),
+            // ),
             // InkWell(
             //   onTap: () {
             //     Navigator.push(context,
@@ -856,21 +856,21 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     MaterialPageRoute(builder: (context) => AboutUs()));
               },
             ),
-            InkWell(
-              child: ListTile(
-                title: Text('Share'),
-                leading: Icon(
-                  Icons.share,
-                  color: HexColor('6153D3'),
-                ),
-              ),
-              onTap: () {
-                // AppInstalledCount();
-                String? a = _linkMessage.toString();
-                // ShareExtend.share("share text", a);
-                ShareExtend.share(a, "text");
-              },
-            ),
+            // InkWell(
+            //   child: ListTile(
+            //     title: Text('Share'),
+            //     leading: Icon(
+            //       Icons.share,
+            //       color: HexColor('6153D3'),
+            //     ),
+            //   ),
+            //   onTap: () {
+            //     // AppInstalledCount();
+            //     String? a = _linkMessage.toString();
+            //     // ShareExtend.share("share text", a);
+            //     ShareExtend.share(a, "text");
+            //   },
+            // ),
             // InkWell(
             //   child: ListTile(
             //     title: Text('Reward  $rewardCount'),

@@ -17,7 +17,11 @@ import 'Services/code_generator.dart';
 import 'Services/deeplink_service.dart';
 
 class CatelogueScreen extends StatefulWidget {
-  const CatelogueScreen({Key? key}) : super(key: key);
+  final hideBottomSheet;
+  final courseImage;
+  final description;
+  final courseName;
+  const CatelogueScreen({Key? key, this.description, this.courseName, this.hideBottomSheet, this.courseImage}) : super(key: key);
   static ValueNotifier<String> coursePrice = ValueNotifier('');
   // static ValueNotifier<Map<String, dynamic>>? map = ValueNotifier({});
   static ValueNotifier<double> _currentPosition = ValueNotifier<double>(0.0);
@@ -176,7 +180,7 @@ class _CatelogueScreenState extends State<CatelogueScreen>
           ),
         ),
       ),
-      bottomSheet: PayNowBottomSheet(
+      bottomSheet: widget.hideBottomSheet ? SizedBox() : PayNowBottomSheet(
         international: international != null && international == true
             ? international
             : false,
@@ -186,213 +190,380 @@ class _CatelogueScreenState extends State<CatelogueScreen>
         // closeBottomSheetAt: closeBottomSheetAt(positionKey),
       ),
       backgroundColor: Colors.white,
-      body: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(height: 10),
-          Expanded(
-              child: ListView.builder(
-            controller: _scrollController,
-            itemCount: course.length,
-            itemBuilder: (BuildContext context, index) {
-              if (course[index].courseName == "null") {
-                return Container();
-              }
-              if (courseId == course[index].courseDocumentId) {
-                CatelogueScreen.coursePrice.value = course[index].coursePrice;
-                // CatelogueScreen.map!.value = map;
-                return Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 00.0, right: 18, left: 18, bottom: 10),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SingleChildScrollView(
-                            child: Column(
-                              children: [
-                                Column(
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(28),
-                                      child: Container(
-                                        height:
-                                            MediaQuery.of(context).size.height *
-                                                0.3,
-                                        width:
-                                            MediaQuery.of(context).size.height *
-                                                0.6,
-                                        child: CachedNetworkImage(
-                                          imageUrl:
-                                              course[index].courseImageUrl,
-                                          fit: BoxFit.cover,
-                                          placeholder: (context, url) => Center(
-                                              child:
-                                                  CircularProgressIndicator()),
-                                          errorWidget: (context, url, error) =>
-                                              Icon(Icons.error),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
-                                              0.9,
-                                          child: Text(
-                                            course[index].courseName,
-                                            style: TextStyle(
-                                                fontFamily: 'Bold',
-                                                color: Colors.black,
-                                                fontSize: 20),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 10,
-                                        ),
-                                        Container(
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
-                                              0.9,
-                                          child: Text(
-                                            course[index].courseDescription,
-                                            style: TextStyle(
-                                                fontFamily: 'Regular',
-                                                color: Colors.black,
-                                                fontSize: 14),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ],
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.only(
+                  top: 00.0, right: 18, left: 18, bottom: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(28),
+                    child: Container(
+                      height:
+                      MediaQuery.of(context).size.height *
+                          0.3,
+                      width:
+                      MediaQuery.of(context).size.height *
+                          0.6,
+                      child: CachedNetworkImage(
+                        imageUrl:
+                        widget.courseImage,
+                        fit: BoxFit.cover,
+                        placeholder: (context, url) => Center(
+                            child:
+                            CircularProgressIndicator()),
+                        errorWidget: (context, url, error) =>
+                            Icon(Icons.error),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Column(
+                    crossAxisAlignment:
+                    CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context)
+                            .size
+                            .width *
+                            0.9,
+                        child: Text(
+                          widget.courseName,
+                          style: TextStyle(
+                              fontFamily: 'Bold',
+                              color: Colors.black,
+                              fontSize: 20),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context)
+                            .size
+                            .width *
+                            0.9,
+                        child: Text(
+                          widget.description,
+                          style: TextStyle(
+                              fontFamily: 'Regular',
+                              color: Colors.black,
+                              fontSize: 14),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 45,
+                  ),
+                  includes(context),
+                  Container(
+                    child: Curriculam(
+                      courseDetail: course[0],
+                    ),
+                  ),
+                  Container(
+                    key: _positionKey,
+                  ),
+                  widget.hideBottomSheet ? SizedBox() : Ribbon(
+                    nearLength: 1,
+                    farLength: .5,
+                    title: ' ',
+                    titleStyle: TextStyle(
+                        color: Colors.black,
+                        // Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
+                    color: Color.fromARGB(255, 11, 139, 244),
+                    location: RibbonLocation.topStart,
+                    child: Container(
+                      //  key:key,
+                      // width: width * .9,
+                      // height: height * .5,
+                      color: Color.fromARGB(255, 24, 4, 104),
+                      child: Padding(
+                        padding: const EdgeInsets.all(40.0),
+                        child: Column(
+                          //  key:Gkey,
+                          children: [
+                            SizedBox(
+                              height: height * .03,
                             ),
-                          ),
-                          SizedBox(
-                            height: 45,
-                          ),
-                          includes(context),
-                          Container(
-                            child: Curriculam(
-                              courseDetail: course[index],
+                            Text(
+                              'Complete Course Fee',
+                              style: TextStyle(
+                                  fontFamily: 'Bold',
+                                  fontSize: 21,
+                                  color: Colors.white),
                             ),
-                          ),
-                          Container(
-                            key: _positionKey,
-                          ),
-                          Ribbon(
-                            nearLength: 1,
-                            farLength: .5,
-                            title: ' ',
-                            titleStyle: TextStyle(
-                                color: Colors.black,
-                                // Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
-                            color: Color.fromARGB(255, 11, 139, 244),
-                            location: RibbonLocation.topStart,
-                            child: Container(
-                              //  key:key,
-                              // width: width * .9,
-                              // height: height * .5,
-                              color: Color.fromARGB(255, 24, 4, 104),
-                              child: Padding(
-                                padding: const EdgeInsets.all(40.0),
-                                child: Column(
-                                  //  key:Gkey,
-                                  children: [
-                                    SizedBox(
-                                      height: height * .03,
-                                    ),
-                                    Text(
-                                      'Complete Course Fee',
-                                      style: TextStyle(
-                                          fontFamily: 'Bold',
-                                          fontSize: 21,
-                                          color: Colors.white),
-                                    ),
-                                    SizedBox(
-                                      height: 5,
-                                    ),
-                                    Text(
-                                      '( Everything with Lifetime Access )',
-                                      style: TextStyle(
-                                          fontFamily: 'Bold',
-                                          fontSize: 11,
-                                          color: Colors.white),
-                                    ),
-                                    SizedBox(
-                                      height: 30,
-                                    ),
-                                    Text(
-                                      '₹${(course[index].coursePrice).toString()}/-',
-                                      style: TextStyle(
-                                          fontFamily: 'Medium',
-                                          fontSize: 30,
-                                          color: Colors.white),
-                                    ),
-                                    SizedBox(height: 35),
-                                    InkWell(
-                                      onTap: () {
-                                        // Navigator.push(
-                                        //   context,
-                                        //   MaterialPageRoute(
-                                        //     builder: (context) => PaymentScreen(
-                                        //       // map: courseMap,
-                                        //       isItComboCourse: false,
-                                        //     ),
-                                        //   ),
-                                        // );
-                                      },
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(30),
-                                            color: Color.fromARGB(
-                                                255, 119, 191, 249),
-                                            gradient: gradient),
-                                        height: height * .08,
-                                        width: width * .6,
-                                        child: Center(
-                                          child: Text(
-                                            'Buy Now',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 20),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              '( Everything with Lifetime Access )',
+                              style: TextStyle(
+                                  fontFamily: 'Bold',
+                                  fontSize: 11,
+                                  color: Colors.white),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            // Text(
+                            //   '₹${(course[index].coursePrice).toString()}/-',
+                            //   style: TextStyle(
+                            //       fontFamily: 'Medium',
+                            //       fontSize: 30,
+                            //       color: Colors.white),
+                            // ),
+                            SizedBox(height: 35),
+                            InkWell(
+                              onTap: () {
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //     builder: (context) => PaymentScreen(
+                                //       // map: courseMap,
+                                //       isItComboCourse: false,
+                                //     ),
+                                //   ),
+                                // );
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                    BorderRadius.circular(30),
+                                    color: Color.fromARGB(
+                                        255, 119, 191, 249),
+                                    gradient: gradient),
+                                height: height * .08,
+                                width: width * .6,
+                                child: Center(
+                                  child: Text(
+                                    'Buy Now',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                  ],
-                );
-              } else {
-                return Container();
-              }
-            },
-          ))
-        ],
+                  ),
+                ],
+              ),
+            ),
+            // ListView.builder(
+            //   controller: _scrollController,
+            //   itemCount: course.length,
+            //   itemBuilder: (BuildContext context, index) {
+            // if (course[index].courseName == "null") {
+            //   return Container();
+            // }
+            // if (courseId == course[index].courseDocumentId) {
+            //   CatelogueScreen.coursePrice.value = course[index].coursePrice;
+            //   // CatelogueScreen.map!.value = map;
+            //   return Stack(
+            //     children: [
+            //       Padding(
+            //         padding: const EdgeInsets.only(
+            //             top: 00.0, right: 18, left: 18, bottom: 10),
+            //         child: Column(
+            //           mainAxisAlignment: MainAxisAlignment.start,
+            //           crossAxisAlignment: CrossAxisAlignment.center,
+            //           children: [
+            //             SingleChildScrollView(
+            //               child: Column(
+            //                 children: [
+            //                   ClipRRect(
+            //                     borderRadius: BorderRadius.circular(28),
+            //                     child: Container(
+            //                       height:
+            //                           MediaQuery.of(context).size.height *
+            //                               0.3,
+            //                       width:
+            //                           MediaQuery.of(context).size.height *
+            //                               0.6,
+            //                       child: CachedNetworkImage(
+            //                         imageUrl:
+            //                             widget.courseImage,
+            //                         fit: BoxFit.cover,
+            //                         placeholder: (context, url) => Center(
+            //                             child:
+            //                                 CircularProgressIndicator()),
+            //                         errorWidget: (context, url, error) =>
+            //                             Icon(Icons.error),
+            //                       ),
+            //                     ),
+            //                   ),
+            //                   SizedBox(
+            //                     height: 20,
+            //                   ),
+            //                   Column(
+            //                     crossAxisAlignment:
+            //                         CrossAxisAlignment.start,
+            //                     children: [
+            //                       Container(
+            //                         width: MediaQuery.of(context)
+            //                                 .size
+            //                                 .width *
+            //                             0.9,
+            //                         child: Text(
+            //                           widget.courseName,
+            //                           style: TextStyle(
+            //                               fontFamily: 'Bold',
+            //                               color: Colors.black,
+            //                               fontSize: 20),
+            //                         ),
+            //                       ),
+            //                       SizedBox(
+            //                         height: 10,
+            //                       ),
+            //                       Container(
+            //                         width: MediaQuery.of(context)
+            //                                 .size
+            //                                 .width *
+            //                             0.9,
+            //                         child: Text(
+            //                           widget.description,
+            //                           style: TextStyle(
+            //                               fontFamily: 'Regular',
+            //                               color: Colors.black,
+            //                               fontSize: 14),
+            //                         ),
+            //                       ),
+            //                     ],
+            //                   ),
+            //                 ],
+            //               ),
+            //             ),
+            //             SizedBox(
+            //               height: 45,
+            //             ),
+            //             includes(context),
+            //             Container(
+            //               child: Curriculam(
+            //                 courseDetail: course[index],
+            //               ),
+            //             ),
+            //             Container(
+            //               key: _positionKey,
+            //             ),
+            //             widget.hideBottomSheet ? SizedBox() : Ribbon(
+            //               nearLength: 1,
+            //               farLength: .5,
+            //               title: ' ',
+            //               titleStyle: TextStyle(
+            //                   color: Colors.black,
+            //                   // Colors.white,
+            //                   fontSize: 18,
+            //                   fontWeight: FontWeight.bold),
+            //               color: Color.fromARGB(255, 11, 139, 244),
+            //               location: RibbonLocation.topStart,
+            //               child: Container(
+            //                 //  key:key,
+            //                 // width: width * .9,
+            //                 // height: height * .5,
+            //                 color: Color.fromARGB(255, 24, 4, 104),
+            //                 child: Padding(
+            //                   padding: const EdgeInsets.all(40.0),
+            //                   child: Column(
+            //                     //  key:Gkey,
+            //                     children: [
+            //                       SizedBox(
+            //                         height: height * .03,
+            //                       ),
+            //                       Text(
+            //                         'Complete Course Fee',
+            //                         style: TextStyle(
+            //                             fontFamily: 'Bold',
+            //                             fontSize: 21,
+            //                             color: Colors.white),
+            //                       ),
+            //                       SizedBox(
+            //                         height: 5,
+            //                       ),
+            //                       Text(
+            //                         '( Everything with Lifetime Access )',
+            //                         style: TextStyle(
+            //                             fontFamily: 'Bold',
+            //                             fontSize: 11,
+            //                             color: Colors.white),
+            //                       ),
+            //                       SizedBox(
+            //                         height: 30,
+            //                       ),
+            //                       Text(
+            //                         '₹${(course[index].coursePrice).toString()}/-',
+            //                         style: TextStyle(
+            //                             fontFamily: 'Medium',
+            //                             fontSize: 30,
+            //                             color: Colors.white),
+            //                       ),
+            //                       SizedBox(height: 35),
+            //                       InkWell(
+            //                         onTap: () {
+            //                           // Navigator.push(
+            //                           //   context,
+            //                           //   MaterialPageRoute(
+            //                           //     builder: (context) => PaymentScreen(
+            //                           //       // map: courseMap,
+            //                           //       isItComboCourse: false,
+            //                           //     ),
+            //                           //   ),
+            //                           // );
+            //                         },
+            //                         child: Container(
+            //                           decoration: BoxDecoration(
+            //                               borderRadius:
+            //                                   BorderRadius.circular(30),
+            //                               color: Color.fromARGB(
+            //                                   255, 119, 191, 249),
+            //                               gradient: gradient),
+            //                           height: height * .08,
+            //                           width: width * .6,
+            //                           child: Center(
+            //                             child: Text(
+            //                               'Buy Now',
+            //                               textAlign: TextAlign.center,
+            //                               style: TextStyle(
+            //                                   color: Colors.white,
+            //                                   fontSize: 20),
+            //                             ),
+            //                           ),
+            //                         ),
+            //                       ),
+            //                     ],
+            //                   ),
+            //                 ),
+            //               ),
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //     ],
+            //   );
+            // } else {
+            //   return Container();
+            // }
+            //   },
+            // )
+          ],
+        ),
       ),
     );
   }
