@@ -195,7 +195,7 @@ class _PaymentScreenState extends State<PaymentScreen> with CouponCodeMixin {
       // get firebase id token for authentication
       String? token = await FirebaseAuth.instance.currentUser!.getIdToken();
       var url = Uri.parse(
-          'https://us-central1-cloudyml-app.cloudfunctions.net/checkCouponCode');
+          'https://us-central1-cloudyml-app.cloudfunctions.net/datalyCheckCouponCode');
       var data = {"couponCode": "$couponCode"};
       var body = json.encode({"data": data});
       print(body);
@@ -1076,7 +1076,7 @@ class _PaymentScreenState extends State<PaymentScreen> with CouponCodeMixin {
                                     fit: BoxFit.fitWidth,
                                     child: Text(
                                       couponCodeApplied && courseMap['dataly_discounted_price'] != null ?
-                                      'CAD' + ' ${int.parse(courseMap['dataly_discounted_price']) - double.parse(discountvalue)}'
+                                      'CAD' + ' ${int.parse(courseMap['dataly_discounted_price']) - double.parse(discountvalue).round()}'
                                           :
                                       courseMap['dataly_discounted_price'] != null ?
                                       'CAD ${courseMap['dataly_discounted_price']}' :

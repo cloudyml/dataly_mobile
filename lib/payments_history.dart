@@ -610,7 +610,7 @@ class _PaymentHistoryState extends State<PaymentHistory> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) =>
-                                        const CatelogueScreen(),
+                                         CatelogueScreen(),
                                   ),
                                 );
                               }

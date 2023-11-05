@@ -312,7 +312,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const CatelogueScreen()),
+                                                   CatelogueScreen()),
                                         );
                                       }
                                     },

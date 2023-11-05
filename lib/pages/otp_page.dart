@@ -385,7 +385,7 @@ class _OtpPageState extends State<OtpPage> {
           if (navigateto == "catelogue") {
             Navigator.of(context).pushAndRemoveUntil(
                 MaterialPageRoute(
-                  builder: (_) => CatelogueScreen(),
+                  builder: (_) => HomePage(),
                 ),
                 (Route<dynamic> route) => false);
           } else if (navigateto == "showcase") {
@@ -442,7 +442,7 @@ class _OtpPageState extends State<OtpPage> {
       if (navigateto == "catelogue") {
         Navigator.of(context).pushAndRemoveUntil(
             MaterialPageRoute(
-              builder: (_) => CatelogueScreen(),
+              builder: (_) => HomePage(),
             ),
             (Route<dynamic> route) => false);
       } else if (navigateto == "showcase") {

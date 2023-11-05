@@ -18,10 +18,10 @@ import 'Services/deeplink_service.dart';
 
 class CatelogueScreen extends StatefulWidget {
   final hideBottomSheet;
-  final courseImage;
-  final description;
-  final courseName;
-  const CatelogueScreen({Key? key, this.description, this.courseName, this.hideBottomSheet, this.courseImage}) : super(key: key);
+  String courseImage;
+  String description;
+  String courseName;
+  CatelogueScreen({Key? key, this.description = '', this.courseName = '', this.hideBottomSheet = true, this.courseImage = ''}) : super(key: key);
   static ValueNotifier<String> coursePrice = ValueNotifier('');
   // static ValueNotifier<Map<String, dynamic>>? map = ValueNotifier({});
   static ValueNotifier<double> _currentPosition = ValueNotifier<double>(0.0);

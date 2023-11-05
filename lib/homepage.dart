@@ -2371,7 +2371,7 @@ class _HomeState extends State<Home> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const CatelogueScreen()),
+                                                     CatelogueScreen()),
                                           );
                                         }
                                       },
@@ -2593,7 +2593,7 @@ class _HomeState extends State<Home> {
                                                               MaterialPageRoute(
                                                                   builder:
                                                                       (context) =>
-                                                                          const CatelogueScreen()),
+                                                                           CatelogueScreen()),
                                                             );
                                                           }
                                                         },
