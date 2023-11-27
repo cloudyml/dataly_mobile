@@ -2170,7 +2170,6 @@ class _VideoScreenState extends State<VideoScreen> {
                       future: getProooDataaa(root.moduleId!, root.videoId!),
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
-                          print('snapshot.data ${snapshot.data}');
                           return root.type == 'assignment' ||
                                   root.type == 'quiz' ||
                                   root.type == 'resume'
@@ -2187,10 +2186,11 @@ class _VideoScreenState extends State<VideoScreen> {
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Column(
-                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      // mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Transform.scale(
-                                          scale: 1,
+                                          scale: 0.9,
                                           child: Checkbox(
                                             checkColor: snapshot.data == '100'
                                                 ? Colors.white
@@ -2231,7 +2231,7 @@ class _VideoScreenState extends State<VideoScreen> {
                                         ),
                                         Text(
                                           'Mark As Complete',
-                                          style: TextStyle(fontSize: 7),
+                                          style: TextStyle(fontSize: 6, color: Colors.white),
                                         )
                                       ],
                                     )
