@@ -64,7 +64,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.cloudyml.cloudymlapp"
+        applicationId "com.dataly.datalyapp"
         minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         // flutter.targetSdkVersion

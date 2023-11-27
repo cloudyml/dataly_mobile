@@ -68,8 +68,8 @@ Future<void> main() async {
   AwesomeNotifications().initialize(null, [
     NotificationChannel(
       channelKey: 'image',
-      channelName: 'CloudyML',
-      channelDescription: "CloudyML",
+      channelName: 'Dataly',
+      channelDescription: "Dataly",
       enableLights: true,
       playSound: true,
       locked: true,

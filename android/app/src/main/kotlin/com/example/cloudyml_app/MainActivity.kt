@@ -1,4 +1,4 @@
-package com.cloudyml.cloudymlapp
+package com.dataly.datalyapp
 
 import android.content.Context
 import android.content.res.Configuration

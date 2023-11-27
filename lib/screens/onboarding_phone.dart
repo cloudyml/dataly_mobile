@@ -77,20 +77,20 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               children: <Widget>[
                 Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: Column(
                     children: <Widget>[
                       Container(
                         margin: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 20),
+                            horizontal: 15, vertical: 15),
                         child: Stack(
                           children: <Widget>[
                             Center(
                               child: Container(
-                                height: 240,
+                                height: 150,
                                 constraints:
-                                    const BoxConstraints(maxWidth: 500),
-                                margin: const EdgeInsets.only(top: 100),
+                                    const BoxConstraints(maxWidth: 400),
+                                margin: const EdgeInsets.only(top: 80),
                                 decoration: const BoxDecoration(
                                     color: Color(0xFFE1E0F5),
                                     borderRadius:
@@ -100,33 +100,33 @@ class _LoginPageState extends State<LoginPage> {
                             Center(
                               child: Container(
                                   constraints:
-                                      const BoxConstraints(maxHeight: 340),
+                                      const BoxConstraints(maxHeight: 250),
                                   margin:
-                                      const EdgeInsets.symmetric(horizontal: 8),
+                                      const EdgeInsets.symmetric(horizontal: 4),
                                   child: Lottie.asset('assets/logingif.json')),
                             ),
                           ],
                         ),
                       ),
                       SizedBox(
-                        height: 35,
+                        height: 25,
                       ),
                       Container(
                           margin: const EdgeInsets.symmetric(horizontal: 10),
                           child: Text('Dataly',
                               style: TextStyle(
                                   color: MyColors.primaryColor,
-                                  fontSize: 25,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.w800)))
                     ],
                   ),
                 ),
                 Expanded(
-                  flex: 1,
+                  flex: 2,
                   child: Column(
                     children: <Widget>[
                       Container(
-                        constraints: const BoxConstraints(maxWidth: 500),
+                        constraints: const BoxConstraints(maxWidth: 300),
                         margin: const EdgeInsets.symmetric(horizontal: 10),
                         child: RichText(
                           textAlign: TextAlign.center,

@@ -378,7 +378,7 @@ class _HomeState extends State<Home> {
               height: 50,
             ),
             Text(
-              "CloudyML",
+              "Dataly",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
