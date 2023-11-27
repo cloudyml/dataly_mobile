@@ -2187,10 +2187,10 @@ class _VideoScreenState extends State<VideoScreen> {
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Column(
-                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Transform.scale(
-                                          scale: 1,
+                                          scale: .9,
                                           child: Checkbox(
                                             checkColor: snapshot.data == '100'
                                                 ? Colors.white
@@ -2231,7 +2231,7 @@ class _VideoScreenState extends State<VideoScreen> {
                                         ),
                                         Text(
                                           'Mark As Complete',
-                                          style: TextStyle(fontSize: 7),
+                                          style: TextStyle(fontSize: 6),
                                         )
                                       ],
                                     )

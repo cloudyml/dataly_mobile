@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:67056708090:android:c1d1746d931d7dfd6ddc43",
         "android_client_info": {
-          "package_name": "com.cloudyml.cloudymlapp"
+          "package_name": "com.dataly.datalyapp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "67056708090-204m5o5sqnqlgqc87j45h6icfbke6e3b.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "f4ca35cb4b6f2af13deff188fc2a9e7a6180491e"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "67056708090-46hpiekv4a8gonevncma5r31t2ej6782.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "70b40f7f1ed0bfb201430a3267f167c37d1d437f"
           }
         },
@@ -34,7 +34,7 @@
           "client_id": "67056708090-49s390v6rluisb8ggana7nm2rs6u1nji.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "138ab6e6521dce2f9df385a815db1fc6485cf62b"
           }
         },
@@ -42,7 +42,7 @@
           "client_id": "67056708090-60rkro1hq3tqdni72krs0bsqcn4gasb5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "95be9fd08a5081297c40600ea8db4b79a7251357"
           }
         },
@@ -50,7 +50,7 @@
           "client_id": "67056708090-676bjpkv5me33nh0umatiebsvhivll4e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "ea338f529bc48d7119f154912e102b9b4ce8a688"
           }
         },
@@ -58,7 +58,7 @@
           "client_id": "67056708090-7ba3je9i7qc9tejt0ofc57n666vre5b0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "b9b302f02757f037e035eb1bd8ee795069fd32d5"
           }
         },
@@ -66,7 +66,7 @@
           "client_id": "67056708090-7i2njsiliomkju2q20d1rndidn8mrvoi.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "03a4009322512cebcaf255ecfa1338acfc303c26"
           }
         },
@@ -74,7 +74,7 @@
           "client_id": "67056708090-7qk2uaprll0jgdtepm9neps57hp94p70.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "7e9a839429c9e5e793a0dbd41ac1c1471e80eab6"
           }
         },
@@ -82,7 +82,7 @@
           "client_id": "67056708090-87a835nrud2794u342evre1vvu1f0pj7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "30fdd1a3ebae33282d93105531f0299c75f9d940"
           }
         },
@@ -90,7 +90,7 @@
           "client_id": "67056708090-8u5f0vlncsaandr551gele7tlip8g7t2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "fbd7e1ffb27fa44eceac6100a15a96da93e1dbc1"
           }
         },
@@ -98,7 +98,7 @@
           "client_id": "67056708090-epsstdtunlb5ct2caur3q178ef1kjhfb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "bff3417b197cd88877748810438f1908be5b2ec7"
           }
         },
@@ -106,7 +106,7 @@
           "client_id": "67056708090-f1iksc9hv0of6qtefp0bo8tapl3j0fsg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "831eeb0301fe1149d617856da8a6350ac9a55736"
           }
         },
@@ -114,7 +114,7 @@
           "client_id": "67056708090-f7412nd7jpe1k5k473tcp43ujn9noupu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "2a4650184b940e51f2c87368708e986b0cebf2c3"
           }
         },
@@ -122,7 +122,7 @@
           "client_id": "67056708090-fjh9smiasmmqsm7lhu4ng3tdksn41te9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "7cebcb1c5dbc31018351a709e5a46a2c8012d70b"
           }
         },
@@ -130,7 +130,7 @@
           "client_id": "67056708090-mrkme9qhg310cnvp3v3s4elgk1n6tn54.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "c20ffcae2ceaaea480eef23d62b2c68f8ec2eb84"
           }
         },
@@ -138,7 +138,7 @@
           "client_id": "67056708090-nur79i3ol54rsnigu7q1c5307gtpk90i.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "8af823bd9a0af49a73393384971a4a650562a9c0"
           }
         },
@@ -146,7 +146,7 @@
           "client_id": "67056708090-pcqdea9olr5j9cj6cgubaslo883bej3h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "2033f74ac8e9d176ebb9c6b3f9ae291276291635"
           }
         },
@@ -154,7 +154,7 @@
           "client_id": "67056708090-rinmt8grpdstk1j6u45n2uuo4g9211hq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "43173c39881ae1733bc82e564dd42834b37c52df"
           }
         },
@@ -162,7 +162,7 @@
           "client_id": "67056708090-u3vo9r408cu9q3919q3vceon4orq8bau.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "b3d913fdbcaaa8bad576951fcba20c9923a4ad2a"
           }
         },
@@ -170,7 +170,7 @@
           "client_id": "67056708090-vg6p97v2bdqu5spo979s99s625e87ef3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "3fb5a79fe95244545f3203999681e05bb48ba916"
           }
         },
@@ -195,7 +195,7 @@
               "client_id": "67056708090-bf7h7sseku64ctdhrg0inglm8af9i8p3.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.cloudyml.cloudymlapp"
+                "bundle_id": "com.dataly.datalyapp"
               }
             }
           ]
@@ -206,7 +206,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:67056708090:android:8856c780a79facac6ddc43",
         "android_client_info": {
-          "package_name": "com.cloudyml.cloudymlcourseapp"
+          "package_name": "com.dataly.datalyapp"
         }
       },
       "oauth_client": [
@@ -214,7 +214,7 @@
           "client_id": "67056708090-32a8k0pb999ei3270ok8rj2d3i2ovn0b.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlcourseapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "bff3417b197cd88877748810438f1908be5b2ec7"
           }
         },
@@ -222,7 +222,7 @@
           "client_id": "67056708090-70cvfd5etm6jrj0au0u924kscm4cardq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlcourseapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "138ab6e6521dce2f9df385a815db1fc6485cf62b"
           }
         },
@@ -230,7 +230,7 @@
           "client_id": "67056708090-h1m95s771tbubdalrr2kiif1mgbiinpk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlcourseapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "de3beeaaea72657a529d25619d6f3355aec24137"
           }
         },
@@ -238,7 +238,7 @@
           "client_id": "67056708090-jmc9is9etkn1l9cree0rdvp0fpsjfvlf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlcourseapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "7e9a839429c9e5e793a0dbd41ac1c1471e80eab6"
           }
         },
@@ -246,7 +246,7 @@
           "client_id": "67056708090-nh4ogm4a0hgg94bvkmdg11tpu83h6mqk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cloudyml.cloudymlcourseapp",
+            "package_name": "com.dataly.datalyapp",
             "certificate_hash": "831eeb0301fe1149d617856da8a6350ac9a55736"
           }
         },
@@ -271,7 +271,7 @@
               "client_id": "67056708090-bf7h7sseku64ctdhrg0inglm8af9i8p3.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.cloudyml.cloudymlapp"
+                "bundle_id": "com.dataly.datalyapp"
               }
             }
           ]
@@ -307,7 +307,7 @@
               "client_id": "67056708090-bf7h7sseku64ctdhrg0inglm8af9i8p3.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.cloudyml.cloudymlapp"
+                "bundle_id": "com.dataly.datalyapp"
               }
             }
           ]
@@ -343,7 +343,7 @@
               "client_id": "67056708090-bf7h7sseku64ctdhrg0inglm8af9i8p3.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.cloudyml.cloudymlapp"
+                "bundle_id": "com.dataly.datalyapp"
               }
             }
           ]
