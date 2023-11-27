@@ -1,4 +1,4 @@
-# cloudyml_app2
+# dataly_app
 
 A new Flutter project.
 
