@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/screens/flutter_flow/flutter_flow_util.dart';
-import 'package:cloudyml_app2/screens/quiz/model/quiztrackmodel.dart';
-import 'package:cloudyml_app2/screens/quiz/quiz_page.dart';
+import 'package:dataly_app/screens/flutter_flow/flutter_flow_util.dart';
+import 'package:dataly_app/screens/quiz/model/quiztrackmodel.dart';
+import 'package:dataly_app/screens/quiz/quiz_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';

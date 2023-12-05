@@ -1,14 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/catalogue_screen.dart';
-import 'package:cloudyml_app2/combo/combo_store.dart';
-import 'package:cloudyml_app2/combo/multi_combo_feature_screen.dart';
-import 'package:cloudyml_app2/free_course.dart';
-import 'package:cloudyml_app2/fun.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/home.dart';
-import 'package:cloudyml_app2/models/course_details.dart';
-import 'package:cloudyml_app2/models/user_details.dart';
+import 'package:dataly_app/catalogue_screen.dart';
+import 'package:dataly_app/combo/combo_store.dart';
+import 'package:dataly_app/combo/multi_combo_feature_screen.dart';
+import 'package:dataly_app/free_course.dart';
+import 'package:dataly_app/fun.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/home.dart';
+import 'package:dataly_app/models/course_details.dart';
+import 'package:dataly_app/models/user_details.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

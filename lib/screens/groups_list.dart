@@ -4,8 +4,8 @@ import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/fun.dart';
-import 'package:cloudyml_app2/screens/chat_screen.dart';
+import 'package:dataly_app/fun.dart';
+import 'package:dataly_app/screens/chat_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';

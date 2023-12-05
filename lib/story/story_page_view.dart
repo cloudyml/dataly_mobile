@@ -1,9 +1,9 @@
 // import 'package:auto_orientation/auto_orientation.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:cloudyml_app2/models/story_model.dart';
-// import 'package:cloudyml_app2/story/story_db.dart';
-// import 'package:cloudyml_app2/story/story_provider.dart';
-// import 'package:cloudyml_app2/story/story_view_customised.dart';
+// import 'package:dataly_app/models/story_model.dart';
+// import 'package:dataly_app/story/story_db.dart';
+// import 'package:dataly_app/story/story_provider.dart';
+// import 'package:dataly_app/story/story_view_customised.dart';
 // import 'package:flutter/material.dart';
 // import 'package:provider/provider.dart';
 

@@ -1,9 +1,9 @@
 import 'dart:math';
 
-import 'package:cloudyml_app2/authentication/loginform.dart';
-import 'package:cloudyml_app2/authentication/onboardbg.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/pages/PhoneName.dart';
+import 'package:dataly_app/authentication/loginform.dart';
+import 'package:dataly_app/authentication/onboardbg.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/pages/PhoneName.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 

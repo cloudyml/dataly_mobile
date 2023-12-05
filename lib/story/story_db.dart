@@ -1,4 +1,4 @@
-// import 'package:cloudyml_app2/models/offline_model.dart';
+// import 'package:dataly_app/models/offline_model.dart';
 // import 'package:path/path.dart';
 // import 'package:sqflite/sqflite.dart';
 

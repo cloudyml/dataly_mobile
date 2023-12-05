@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/helpers/file_handler.dart';
-import 'package:cloudyml_app2/widgets/demo_video.dart';
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/helpers/file_handler.dart';
+import 'package:dataly_app/widgets/demo_video.dart';
+import 'package:dataly_app/globals.dart';
 import 'package:flutter/material.dart';
 
 import '../models/course_details.dart';

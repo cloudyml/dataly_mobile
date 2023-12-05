@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/combo/controller/multi_combo_course_controller.dart';
-import 'package:cloudyml_app2/module/pdf_course.dart';
+import 'package:dataly_app/combo/controller/multi_combo_course_controller.dart';
+import 'package:dataly_app/module/pdf_course.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';

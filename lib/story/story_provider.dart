@@ -1,9 +1,9 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:cloudyml_app2/quizStory/model/option.dart';
-// import 'package:cloudyml_app2/story/story_constants.dart';
-// import 'package:cloudyml_app2/story/story_db.dart';
-// import 'package:cloudyml_app2/story/story_view_customised.dart';
-// import 'package:cloudyml_app2/story/story_item_text.dart';
+// import 'package:dataly_app/quizStory/model/option.dart';
+// import 'package:dataly_app/story/story_constants.dart';
+// import 'package:dataly_app/story/story_db.dart';
+// import 'package:dataly_app/story/story_view_customised.dart';
+// import 'package:dataly_app/story/story_item_text.dart';
 // import 'package:flutter/material.dart';
 // import 'package:story_view/controller/story_controller.dart';
 // import '../api/firebase_api.dart';

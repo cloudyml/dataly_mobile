@@ -3,14 +3,14 @@
 // import 'package:awesome_dialog/awesome_dialog.dart';
 // import 'package:awesome_notifications/awesome_notifications.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:cloudyml_app2/authentication/SignUpForm.dart';
-// import 'package:cloudyml_app2/authentication/firebase_auth.dart';
-// import 'package:cloudyml_app2/authentication/loginform.dart';
-// import 'package:cloudyml_app2/authentication/onboardbg.dart';
-// import 'package:cloudyml_app2/authentication/phoneauthnew.dart';
-// import 'package:cloudyml_app2/globals.dart';
-// import 'package:cloudyml_app2/home.dart';
-// import 'package:cloudyml_app2/models/existing_user.dart';
+// import 'package:dataly_app/authentication/SignUpForm.dart';
+// import 'package:dataly_app/authentication/firebase_auth.dart';
+// import 'package:dataly_app/authentication/loginform.dart';
+// import 'package:dataly_app/authentication/onboardbg.dart';
+// import 'package:dataly_app/authentication/phoneauthnew.dart';
+// import 'package:dataly_app/globals.dart';
+// import 'package:dataly_app/home.dart';
+// import 'package:dataly_app/models/existing_user.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_styled_toast/flutter_styled_toast.dart';
@@ -33,7 +33,7 @@
 // import '../Providers/UserProvider.dart';
 // import '../pages/newentername.dart';
 // import '../widgets/loading.dart';
-// import 'package:cloudyml_app2/global_variable.dart' as globals;
+// import 'package:dataly_app/global_variable.dart' as globals;
 
 // class Onboardew extends StatefulWidget {
 //   Onboardew({Key? key}) : super(key: key);

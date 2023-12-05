@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/Providers/UserProvider.dart';
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/Providers/UserProvider.dart';
+import 'package:dataly_app/globals.dart';
 import 'package:currency_picker/currency_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:cloudyml_app2/global_variable.dart' as globals;
+import 'package:dataly_app/global_variable.dart' as globals;
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';

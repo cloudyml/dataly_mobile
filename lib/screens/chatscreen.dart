@@ -1,5 +1,5 @@
-import 'package:cloudyml_app2/authentication/onboardbg.dart';
-import 'package:cloudyml_app2/screens/config.dart';
+import 'package:dataly_app/authentication/onboardbg.dart';
+import 'package:dataly_app/screens/config.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;

@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:auto_orientation/auto_orientation.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/models/offline_model.dart';
-import 'package:cloudyml_app2/widgets/settings_bottomsheet.dart';
-import 'package:cloudyml_app2/widgets/video_player_widgets/fullscreen_icon.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/models/offline_model.dart';
+import 'package:dataly_app/widgets/settings_bottomsheet.dart';
+import 'package:dataly_app/widgets/video_player_widgets/fullscreen_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 

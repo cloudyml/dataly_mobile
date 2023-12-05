@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:badges/badges.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/catalogue_screen.dart';
-import 'package:cloudyml_app2/combo/combo_store.dart';
-import 'package:cloudyml_app2/homescreen/home_controller.dart';
-import 'package:cloudyml_app2/module/video_screen.dart';
-import 'package:cloudyml_app2/my_Courses.dart';
+import 'package:dataly_app/catalogue_screen.dart';
+import 'package:dataly_app/combo/combo_store.dart';
+import 'package:dataly_app/homescreen/home_controller.dart';
+import 'package:dataly_app/module/video_screen.dart';
+import 'package:dataly_app/my_Courses.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';

@@ -2,13 +2,13 @@ import 'dart:async';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/global_variable.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/home.dart';
-import 'package:cloudyml_app2/models/course_details.dart';
+import 'package:dataly_app/global_variable.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/home.dart';
+import 'package:dataly_app/models/course_details.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:cloudyml_app2/homepage.dart';
+import 'package:dataly_app/homepage.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:provider/provider.dart';

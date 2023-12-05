@@ -1,6 +1,6 @@
-import 'package:cloudyml_app2/Services/local_notificationservice.dart';
-import 'package:cloudyml_app2/screens/chatscreen.dart';
-import 'package:cloudyml_app2/screens/config.dart';
+import 'package:dataly_app/Services/local_notificationservice.dart';
+import 'package:dataly_app/screens/chatscreen.dart';
+import 'package:dataly_app/screens/config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';

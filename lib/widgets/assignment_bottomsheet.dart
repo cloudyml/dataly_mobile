@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:cloudyml_app2/utils/utils.dart';
+import 'package:dataly_app/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 Future<dynamic> showAssignmentBottomSheet(

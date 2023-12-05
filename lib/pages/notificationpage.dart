@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/Providers/UserProvider.dart';
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/Providers/UserProvider.dart';
+import 'package:dataly_app/globals.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';

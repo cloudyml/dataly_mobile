@@ -1,16 +1,16 @@
-// import 'package:cloudyml_app2/globals.dart';
-// import 'package:cloudyml_app2/screens/stores/login_store.dart';
-// import 'package:cloudyml_app2/screens/stores/onboarding_username.dart';
+// import 'package:dataly_app/globals.dart';
+// import 'package:dataly_app/screens/stores/login_store.dart';
+// import 'package:dataly_app/screens/stores/onboarding_username.dart';
 // import 'package:flutter/cupertino.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_mobx/flutter_mobx.dart';
 // import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 // import 'package:lottie/lottie.dart';
 // import 'package:provider/provider.dart';
-// import 'package:cloudyml_app2/screens/stores/login_store.dart';
-// import 'package:cloudyml_app2/theme.dart';
-// import 'package:cloudyml_app2/widgets/loader_hud.dart';
-// import 'package:cloudyml_app2/global_variable.dart' as globals;
+// import 'package:dataly_app/screens/stores/login_store.dart';
+// import 'package:dataly_app/theme.dart';
+// import 'package:dataly_app/widgets/loader_hud.dart';
+// import 'package:dataly_app/global_variable.dart' as globals;
 // import '../authentication/firebase_auth.dart';
 // import 'onboarding_phone.dart';
 

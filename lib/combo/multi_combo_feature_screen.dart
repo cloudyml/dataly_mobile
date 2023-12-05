@@ -1,4 +1,4 @@
-import 'package:cloudyml_app2/combo/controller/multi_combo_feature_controller.dart';
+import 'package:dataly_app/combo/controller/multi_combo_feature_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';

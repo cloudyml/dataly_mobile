@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/models/UserNotificationModel.dart';
+import 'package:dataly_app/models/UserNotificationModel.dart';
 import 'package:intl/intl.dart';
 
 class UserModel{

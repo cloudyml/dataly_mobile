@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/screens/quiz/admin_quiz.dart';
+import 'package:dataly_app/screens/quiz/admin_quiz.dart';
 import 'package:flutter/cupertino.dart';
 import "package:flutter/material.dart";
 import 'package:go_router/go_router.dart';

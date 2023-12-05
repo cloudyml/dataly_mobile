@@ -1,4 +1,4 @@
-import 'package:cloudyml_app2/global_variable.dart';
+import 'package:dataly_app/global_variable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -140,13 +140,13 @@ class _PostReviewScreenState extends State<PostReviewScreen> {
                             : 30.0, // Adjust spacing for different screen sizes
                       ),
                       Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(8.0),
                         child: Text(
                           'Let us know your experience with us! \u{1F60A}',
                           style: TextStyle(
                             fontFamily: GoogleFonts.abhayaLibre().fontFamily,
                             fontSize: isPhone
-                                ? 14.0
+                                ? 13.0
                                 : 25.0, // Adjust font size for different screen sizes
                             fontWeight: FontWeight.bold,
                             color: const Color.fromARGB(255, 35, 176, 40),
@@ -413,6 +413,7 @@ class _PostReviewScreenState extends State<PostReviewScreen> {
                             ),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               GestureDetector(
                                 onTap: () => _selectStartDate(context),
@@ -426,10 +427,13 @@ class _PostReviewScreenState extends State<PostReviewScreen> {
                                     experienceStartDate != null
                                         ? '${experienceStartDate!.day}/${experienceStartDate!.month}/${experienceStartDate!.year}'
                                         : 'Select Start Date',
+                                    style: TextStyle(
+                                        fontSize: 12
+                                    ),
                                   ),
                                 ),
                               ),
-                              SizedBox(width: 16),
+                              SizedBox(width: 14),
                               GestureDetector(
                                 onTap: () => _selectEndDate(context),
                                 child: Container(
@@ -442,6 +446,9 @@ class _PostReviewScreenState extends State<PostReviewScreen> {
                                     experienceEndDate != null
                                         ? '${experienceEndDate!.day}/${experienceEndDate!.month}/${experienceEndDate!.year}'
                                         : 'Select End Date',
+                                    style: TextStyle(
+                                      fontSize: 12
+                                    ),
                                   ),
                                 ),
                               ),

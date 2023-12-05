@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/models/course_details.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/models/course_details.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 // import 'package:open_file/open_file.dart';

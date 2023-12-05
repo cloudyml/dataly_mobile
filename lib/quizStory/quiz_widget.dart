@@ -1,5 +1,5 @@
-// import 'package:cloudyml_app2/quizStory/model/question.dart';
-// import 'package:cloudyml_app2/quizStory/page/category_page.dart';
+// import 'package:dataly_app/quizStory/model/question.dart';
+// import 'package:dataly_app/quizStory/page/category_page.dart';
 // import 'package:flutter/material.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import 'package:provider/provider.dart';

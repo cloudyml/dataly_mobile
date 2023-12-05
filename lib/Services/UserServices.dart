@@ -1,6 +1,6 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/models/UserModel.dart';
+import 'package:dataly_app/models/UserModel.dart';
 
 class UserServices{
   FirebaseFirestore _firestore=FirebaseFirestore.instance;

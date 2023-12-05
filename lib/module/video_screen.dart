@@ -2,13 +2,13 @@ import 'dart:async';
 
 import 'package:auto_orientation/auto_orientation.dart';
 import 'package:better_player/better_player.dart';
-import 'package:cloudyml_app2/combo/new_combo_course.dart';
-import 'package:cloudyml_app2/models/video_details.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/module/assignment_page.dart';
+import 'package:dataly_app/combo/new_combo_course.dart';
+import 'package:dataly_app/models/video_details.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/module/assignment_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/module/submit_resume.dart';
-import 'package:cloudyml_app2/screens/quiz/quizentry.dart';
+import 'package:dataly_app/module/submit_resume.dart';
+import 'package:dataly_app/screens/quiz/quizentry.dart';
 
 import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -20,7 +20,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:snippet_coder_utils/hex_color.dart';
 import 'package:video_player/video_player.dart';
-import 'package:cloudyml_app2/global_variable.dart' as globals;
+import 'package:dataly_app/global_variable.dart' as globals;
 import '../homepage.dart';
 import 'downloaded_video.dart';
 
@@ -1908,7 +1908,11 @@ class _VideoScreenState extends State<VideoScreen> {
   List toggle = [];
 
   Widget courseQuiz(context) {
-    return coursequiz.runtimeType != Null
+
+    return
+
+      
+      coursequiz.runtimeType != Null
         ? Padding(
             padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
             child: Column(
@@ -1985,7 +1989,9 @@ class _VideoScreenState extends State<VideoScreen> {
               ],
             ),
           )
-        : Container();
+        : Container()
+
+    ;
   }
 
   Widget _buildTiles(DataList root) {
@@ -2355,497 +2361,561 @@ class _VideoScreenState extends State<VideoScreen> {
 
   Widget _buildVideoDetailsListTile() {
     return
-        // ? StreamBuilder(
-        //     stream: FirebaseFirestore.instance
-        //         .collection("courses")
-        //         .doc(courseId)
-        //         .snapshots(),
-        //     builder: (context, AsyncSnapshot snapshot) {
-        //       if (snapshot.hasData) {
-        //         print("snapdata----------");
-        //         var listOfSectionData;
-        //         // setState(() {
-        //           listOfSectionData = snapshot.data["curriculum1"];
-        //         print(widget.courseName);
-        //         print(snapshot.data);
-        //         listOfSectionData[widget.courseName].sort((a, b) {
-        //           print("---========");
-        //           print(a["sr"]);
-        //           if (a["sr"] > b["sr"]) {
-        //             return 1;
-        //           }
-        //           return -1;
-        //         });
-        //         return SingleChildScrollView(
-        //           child: Column(
-        //             crossAxisAlignment: CrossAxisAlignment.stretch,
-        //             children:
-        //                 List.generate(listOfSectionData[widget.courseName].length,
-        //                     (sectionIndex) {
-        //               return Column(
-        //                 crossAxisAlignment: CrossAxisAlignment.stretch,
-        //                 children: [
 
-        //                   // SizedBox(),
-        //                   Text(" ",style: TextStyle(fontSize: 0.5),),
-        //                   Container(
-        //                     child: ExpansionTile(
-        //                         expandedCrossAxisAlignment:
-        //                             CrossAxisAlignment.stretch,
-        //                         title: Text(
-        //                           listOfSectionData[widget.courseName][sectionIndex]
-        //                                   ["modulename"]
-        //                               .toString(),
-        //                           style: TextStyle(fontWeight: FontWeight.bold),
-        //                         ),
-        //                         children: List.generate(
-        //                             listOfSectionData[widget.courseName]
-        //                                     [sectionIndex]["videos"]
-        //                                 .length, (subsectionIndex) {
-        //                           listOfSectionData[widget.courseName][sectionIndex]["videos"]
-        //                               .sort((a, b) {
-        //                             // print("a=====${a["sr"]}");
-        //                             if (a["sr"] > b["sr"]) {
-        //                               return 1;
-        //                             }
-        //                             return -1;
-        //                           });
-        //                           return Column(
-        //                             children: [
-        //                               subIndex != null &&
-        //                                       subIndex == subsectionIndex &&
-        //                                       index == sectionIndex
-        //                                   ? Draggable(
-        //                                       data: 0,
-        //                                       child: Container(
-        //                                         color: Colors.purpleAccent,
-        //                                         child: GestureDetector(
-        //                                             onTap: () {
+      StreamBuilder(
+          stream: FirebaseFirestore.instance
+              .collection("courses")
+              .doc(courseId)
+              .snapshots(),
+          builder: (context, AsyncSnapshot snapshot) {
+            if (snapshot.hasData) {
+              print("snapdata----------");
+              var listOfSectionData;
+              // setState(() {
+              listOfSectionData = snapshot.data["curriculum1"];
+              print(widget.courseName);
+              print(snapshot.data);
+              listOfSectionData[widget.courseName].sort((a, b) {
+                print("---========");
+                print(a["sr"]);
+                if (a["sr"] > b["sr"]) {
+                  return 1;
+                }
+                return -1;
+              });
+              return SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children:
+                  List.generate(listOfSectionData[widget.courseName].length,
+                          (sectionIndex) {
+                        return sectionIndex ==
+                            listOfSectionData[widget.courseName].length - 1
+                            ? Column(
+                          children: [
+                            moduleExpandabletile(
+                                listOfSectionData, sectionIndex),
 
-        //                                             },
-        //                                             child: Container(
-        //                                                 padding: EdgeInsets.only(
-        //                                                     left: 60,
-        //                                                     top: 15,
-        //                                                     bottom: 15),
-        //                                                 child: Align(
-        //                                                   alignment:
-        //                                                       Alignment.centerLeft,
-        //                                                   child: Row(
-        //                                                     children: [
-        //                                                       listOfSectionData[
-        //                                                       widget
-        //                                                           .courseName]
-        //                                                       [
-        //                                                       sectionIndex]
-        //                                                       ["videos"][subsectionIndex]["type"]=="video"?
-        //                                                       Icon(Icons.play_circle):Icon(Icons.assessment),
-        //                                                       SizedBox(width: 10,),
-        //                                                       Expanded(child: Text(
-        //                                                         listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         sectionIndex]
-        //                                                         ["videos"][subsectionIndex]["type"]=="video"?
-        //                                                         listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         sectionIndex]
-        //                                                         ["videos"][
-        //                                                         subsectionIndex]["name"]
-        //                                                             .toString():"Assignment : "+listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         sectionIndex]
-        //                                                         ["videos"][
-        //                                                         subsectionIndex]["name"]
-        //                                                             .toString(),style: TextStyle(overflow: TextOverflow.ellipsis),))
-        //                                                     ],
-        //                                                   ),
-        //                                                 ))),
-        //                                       ),
-        //                                       feedback: SizedBox(
-        //                                         height: 50,
-        //                                           child: Container(
-        //                                               padding: EdgeInsets.only(
-        //                                                   left: 60,
-        //                                                   top: 15,
-        //                                                   bottom: 15),
-        //                                               child: Align(
-        //                                                 alignment:
-        //                                                 Alignment.centerLeft,
-        //                                                 child: Row(
-        //                                                   children: [
-        //                                                     listOfSectionData[
-        //                                                     widget
-        //                                                         .courseName]
-        //                                                     [
-        //                                                     index]
-        //                                                     ["videos"][subIndex]["type"]=="video"?
-        //                                                     Icon(Icons.play_circle):Icon(Icons.assessment),
-        //                                                     SizedBox(width: 10,),
-        //                                                     DefaultTextStyle(style: TextStyle(color: Colors.black,overflow: TextOverflow.ellipsis), child:
-        //                                                     // Expanded(
-        //                                                     //   child:
-        //                                                       Text(
-        //                                                         listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         index]
-        //                                                         ["videos"][subIndex]["type"]=="video"?
-        //                                                         listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         index]
-        //                                                         ["videos"][
-        //                                                         subIndex]["name"]
-        //                                                             .toString():"Assignment : "+listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         index]
-        //                                                         ["videos"][subIndex]["name"]
-        //                                                             .toString(),style: TextStyle(color: Colors.black,fontSize: 17,
-        //                                                           fontWeight: FontWeight.normal,overflow: TextOverflow.ellipsis),),
-        //                                                     // )
-        //                                                     )
-        //                                                   ],
-        //                                                 ),
-        //                                               )),
-        //                                           // width: 50,
-        //                                           // height: 50,
-        //                                         ),
-        //                                       )
-        //                                   : DragTarget<int>(
-        //                                       builder: (context, _, __) =>
-        //                                           GestureDetector(
-        //                                               onDoubleTap: () {
-        //                                                 print("doubletap");
-        //                                               if(role!=null)
-        //                                                 {
-        //                                                   if(role=="mentor")
-        //                                                     {
-        //                                                       setState(() {
-        //                                                         // selectAssignment = null;
-        //                                                         subIndex =
-        //                                                             subsectionIndex;
-        //                                                         index = sectionIndex;
-        //                                                       });
-        //                                                     }
-        //                                                 }
-        //                                                 print(subsectionIndex);
-        //                                               },
-        //                                               onTap: () {
+                            true
+                                ?  coursequiz.isNotEmpty ?
 
-        //                                                 if(listOfSectionData[
-        //                                                 widget
-        //                                                     .courseName]
-        //                                                 [
-        //                                                 sectionIndex]
-        //                                                 ["videos"][
-        //                                                 subsectionIndex]["type"]=="video")
-        //                                                   {
-        //                                                     VideoScreen.currentSpeed
-        //                                                         .value = 1.0;
-        //                                                   }
-        //                                                 else{
+                            courseQuiz(context) : SizedBox() : SizedBox()
+                          ],
+                        )
+                            : moduleExpandabletile(listOfSectionData, sectionIndex);
+                      }),
+                ),
+              );
+            } else {
+              return Text("Loading..");
+            }
+          });
 
-        //                                                   showAssignment =
-        //                                                   true;
-        //                                                   setState(
-        //                                                           () {
-        //                                                         assignmentUrl =
-        //                                                             listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["url"].toString();
-        //                                                         solutionUrl =
-        //                                                             listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["pdf"].toString();
-        //                                                       });
-        //                                                   print(
-        //                                                       "Eagle");
-        //                                                 }
 
-        //                                               },
-        //                                               child: Container(
-        //                                                   padding: EdgeInsets.only(
-        //                                                       left:
-        //                                                       listOfSectionData[
-        //                                                       widget
-        //                                                           .courseName]
-        //                                                       [
-        //                                                       sectionIndex]
-        //                                                       ["videos"][subsectionIndex]["type"]=="video"?60:80,
-        //                                                       top: 15,
-        //                                                       bottom: 15),
-        //                                                   child: Align(
-        //                                                     alignment: Alignment
-        //                                                         .centerLeft,
-        //                                                     child: Row(
-        //                                                       children: [
-        //                                                         listOfSectionData[
-        //                                                         widget
-        //                                                             .courseName]
-        //                                                         [
-        //                                                         sectionIndex]
-        //                                                         ["videos"][subsectionIndex]["type"]=="video"?
-        //                                                             Icon(Icons.play_circle):Icon(Icons.assessment),
-        //                                                         SizedBox(width: 10,),
-        //                                                         Expanded(
-        //                                                           child: Text(
-        //                                                             listOfSectionData[
-        //                                                             widget
-        //                                                                 .courseName]
-        //                                                             [
-        //                                                             sectionIndex]
-        //                                                             ["videos"][subsectionIndex]["type"]=="video"?
-        //                                                             listOfSectionData[
-        //                                                             widget
-        //                                                                 .courseName]
-        //                                                             [
-        //                                                             sectionIndex]
-        //                                                             ["videos"][
-        //                                                             subsectionIndex]["name"]
-        //                                                                 .toString():"Assignment : "+listOfSectionData[
-        //                                                             widget
-        //                                                                 .courseName]
-        //                                                             [
-        //                                                             sectionIndex]
-        //                                                             ["videos"][
-        //                                                             subsectionIndex]["name"]
-        //                                                                 .toString(),style: TextStyle(overflow: TextOverflow.ellipsis),),
-        //                                                         )
-        //                                                       ],
-        //                                                     ),
-        //                                                   ))),
-        //                                       onAccept: (data) async {
-        //                                         print("data---------");
-        //                                         // print(data);
-        //                                         print(
-        //                                             "selected sectionIndex=${index}");
-        //                                         print(
-        //                                             "selected subsectionIndex = ${subIndex}");
-        //                                         print(
-        //                                             "subsectionIndex = ${subsectionIndex}");
-        //                                         print(
-        //                                             "section index= ${sectionIndex}");
-        //                                         print(subsectionIndex);
-        //                                         int count = 0;
-        //                                         if (subIndex != null &&
-        //                                             index != null &&
-        //                                             index == sectionIndex) {
-        //                                           if (subIndex! < subsectionIndex) {
-        //                                             print(true);
-        //                                             for (int i = 0;
-        //                                                 i <= subsectionIndex;
-        //                                                 i++) {
-        //                                               print("count===");
-        //                                               if (i == subIndex) {
-        //                                                 listOfSectionData[widget
-        //                                                                 .courseName]
-        //                                                             [sectionIndex]
-        //                                                         ["videos"][i]
-        //                                                     ["sr"] = listOfSectionData[
-        //                                                             widget.courseName]
-        //                                                         [sectionIndex]["videos"]
-        //                                                     [subsectionIndex]["sr"];
-        //                                                 continue;
-        //                                               }
-        //                                               print("count===${count}");
-        //                                               listOfSectionData[widget
-        //                                                               .courseName]
-        //                                                           [sectionIndex]
-        //                                                       ["videos"][i]["sr"] =
-        //                                                   count;
-        //                                               count++;
-        //                                             }
-        //                                           } else {
-        //                                             print(false);
-        //                                             count = 0;
-
-        //                                             ///
-        //                                             for (int j = subsectionIndex;
-        //                                                 j <= subIndex!;
-        //                                                 j++) {
-        //                                               // print("count===${count}");
-        //                                               print("j======${j}");
-        //                                               if (j == subIndex) {
-        //                                                 listOfSectionData[widget
-        //                                                                 .courseName]
-        //                                                             [sectionIndex][
-        //                                                         "videos"][j]["sr"] =
-        //                                                     subsectionIndex;
-        //                                                 print(
-        //                                                     "a = ${listOfSectionData[widget.courseName][sectionIndex]["videos"][j]["sr"]}");
-        //                                               } else {
-        //                                                 listOfSectionData[widget
-        //                                                                 .courseName]
-        //                                                             [sectionIndex]
-        //                                                         ["videos"][j]
-        //                                                     ["sr"] = j + 1;
-        //                                                 print(
-        //                                                     "b = ${listOfSectionData[widget.courseName][sectionIndex]["videos"][j]["sr"]}");
-        //                                               }
-        //                                             }
-        //                                           }
-        //                                           await FirebaseFirestore.instance
-        //                                               .collection("courses")
-        //                                               .doc(courseId)
-        //                                               .update({
-        //                                             "curriculum1": listOfSectionData
-        //                                           });
-        //                                           setState(() {
-        //                                             listOfSectionData;
-        //                                             subIndex = null;
-        //                                             index = null;
-        //                                           });
-        //                                         }
-        //                                       },
-        //                                     ),
-        //                             ]
-        //                           );
-        //                         })),
-        //                   ),
-        //                 ],
-        //               );
-        //             }),
-        //           ),
-        //         );
-        //       } else {
-        //         return Text("Loading..");
-        //       }
-        //     })
-        ListView.builder(
-      itemBuilder: (BuildContext context, int index) {
-        return index == sublist.length - 1
-            ? Column(
-                children: [
-                  _buildTiles(sublist[index]),
-                  widget.courseName! == 'Apply for placement' ||
-                          widget.courseName! == 'Apply for internship'
-                      ? Container()
-                      : courseQuiz(context),
-                ],
-              )
-            : _buildTiles(sublist[index]);
-      },
-      itemCount: sublist.length,
-    );
-    // Container(
-    //    child: StreamBuilder(
-    //      stream: FirebaseFirestore.instance
-    //          .collection('courses')
-    //          .doc(courseId)
-    //          .collection('Modules')
-    //          .doc(moduleId)
-    //          .collection('Topics')
-    //          .orderBy('sr')
-    //          .snapshots(),
-    //      builder: (BuildContext context, AsyncSnapshot snapshot) {
-    //        if (snapshot.hasData) {
-    //          return ListView.builder(
-    //              shrinkWrap: true,
-    //              itemCount: snapshot.data!.docs.length,
-    //              itemBuilder: (context, index) {
-    //                Map<String, dynamic> map =
-    //                    snapshot.data!.docs[index].data();
-    //                return Card(
-    //                  elevation: 0,
-    //                  color: _currentVideoIndex.value == index
-    //                      ? Color(0xFFDDD2FB)
-    //                      : Colors.white,
-    //                  child: ListTile(
-    //                    onTap: () {
-    //                   //   VideoScreen.currentSpeed.value = 1.0;
-    //                      //  videoId = _listOfVideoDetails[index].videoId;
-    //                      initBetterPlayer(
-    //                          _listOfVideoDetails[index].videoUrl);
-    //                      // intializeVidController(
-    //                      //     _listOfVideoDetails[index].videoUrl,
-    //                      //     '',
-    //                      //     _listOfVideoDetails[index].videoId);
-    //                      _currentVideoIndex.value = index;
-    //                    },
-    //                    leading: Padding(
-    //                      padding: const EdgeInsets.all(8.0),
-    //                      child: Text('${index + 1}'),
-    //                    ),
-    //                    title: Text(
-    //                      map['name'],
-    //                      textScaleFactor: min(
-    //                        horizontalScale,
-    //                        verticalScale,
-    //                      ),
-    //                      style: TextStyle(
-    //                        fontWeight: FontWeight.w500,
-    //                        fontSize: 17,
-    //                        fontFamily: "Medium",
-    //                      ),
-    //                    ),
-    //                    trailing: InkWell(
-    //                      onTap: () async {
-    //                        var directory =
-    //                            await getApplicationDocumentsDirectory();
-    //                        _currentVideoIndex.value = index;
-    //                        if (stopdownloading == true) {
-    //                          download(
-    //                              dio: Dio(),
-    //                              fileName: map['name'],
-    //                              url: map['url'],
-    //                              savePath:
-    //                                  "${directory.path}/${map['name'].replaceAll(' ', '')}.mp4",
-    //                              topicName: map['name'],
-    //                              courseName: widget.courseName);
-    //                          setState(() {
-    //                            stopdownloading = false;
-    //                          });
-    //                        }
-    //                      },
-    //                      child: _currentVideoIndex.value == index
-    //                          ? Stack(
-    //                              children: [
-    //                                Positioned(
-    //                                  bottom: 0,
-    //                                  left: 0,
-    //                                  right: 0,
-    //                                  top: 0,
-    //                                  child: Icon(
-    //                                    Icons.download_for_offline_rounded,
-    //                                  ),
-    //                                ),
-    //                                SizedBox(
-    //                                  height: 30,
-    //                                  width: 30,
-    //                                  child: CircularProgressIndicator(
-    //                                    value: _downloadProgress.value,
-    //                                    color: Color(0xFF7860DC),
-    //                                    backgroundColor: Color(0xFFDDD2FB),
-    //                                  ),
-    //                                )
-    //                              ],
-    //                            )
-    //                          : Icon(
-    //                              Icons.download_for_offline_rounded,
-    //                            ),
-    //                    ),
-    //                  ),
-    //                );
-    //              });
-    //        } else {
-    //          return Padding(
-    //            padding: const EdgeInsets.all(20),
-    //            child: Lottie.network(
-    //                'https://cloudymlbucket.s3.eu-north-1.amazonaws.com/assets/load-shimmer.json',
-    //                fit: BoxFit.fill,
-    //                reverse: true),
-    //          );
-    //        }
-    //      },
-    //    ),
-    //  );
   }
+
+  Widget moduleExpandabletile(listOfSectionData, sectionIndex) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          " ",
+          style: TextStyle(fontSize: 0.5),
+        ),
+        Container(
+          child: ExpansionTile(
+              expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
+              title: Text(
+                listOfSectionData[widget.courseName][sectionIndex]["modulename"]
+                    .toString(),
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              children: List.generate(
+                  listOfSectionData[widget.courseName][sectionIndex]["videos"]
+                      .length, (subsectionIndex) {
+                listOfSectionData[widget.courseName][sectionIndex]["videos"]
+                    .sort((a, b) {
+                  if (a["sr"] > b["sr"]) {
+                    return 1;
+                  }
+                  return -1;
+                });
+                return Column(children: [
+                  subIndex != null &&
+                      subIndex == subsectionIndex &&
+                      index == sectionIndex
+                      ? Draggable(
+                    data: 0,
+                    child: Container(
+                      color: Colors.purpleAccent,
+                      child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                              padding: EdgeInsets.only(
+                                  left: 60, top: 15, bottom: 15),
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Row(
+                                  children: [
+                                    listOfSectionData[widget.courseName]
+                                    [sectionIndex]
+                                    ["videos"]
+                                    [subsectionIndex]
+                                    ["type"] ==
+                                        "video"
+                                        ? Icon(Icons.play_circle)
+                                        : Icon(Icons.assessment),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Expanded(
+                                        child: Text(
+                                          listOfSectionData[widget.courseName]
+                                          [sectionIndex]
+                                          ["videos"]
+                                          [subsectionIndex]
+                                          ["type"] ==
+                                              "video"
+                                              ? listOfSectionData[widget.courseName]
+                                          [sectionIndex]
+                                          ["videos"]
+                                          [subsectionIndex]
+                                          ["name"]
+                                              .toString()
+                                              : "Assignment : " +
+                                              listOfSectionData[widget.courseName]
+                                              [sectionIndex]
+                                              ["videos"]
+                                              [subsectionIndex]["name"]
+                                                  .toString(),
+                                          style: TextStyle(
+                                              overflow:
+                                              TextOverflow.ellipsis),
+                                        ))
+                                  ],
+                                ),
+                              ))),
+                    ),
+                    feedback: SizedBox(
+                      height: 50,
+                      child: Container(
+                          padding: EdgeInsets.only(
+                              left: 60, top: 15, bottom: 15),
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Row(
+                              children: [
+                                listOfSectionData[widget.courseName]
+                                [index]["videos"]
+                                [subIndex]["type"] ==
+                                    "video"
+                                    ? Icon(Icons.play_circle)
+                                    : Icon(Icons.assessment),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                DefaultTextStyle(
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      overflow: TextOverflow.ellipsis),
+                                  child:
+                                  // Expanded(
+                                  //   child:
+                                  Text(
+                                    listOfSectionData[widget.courseName]
+                                    [index]["videos"]
+                                    [subIndex]["type"] ==
+                                        "video"
+                                        ? listOfSectionData[widget.courseName]
+                                    [index]["videos"]
+                                    [subIndex]["name"]
+                                        .toString()
+                                        : "Assignment : " +
+                                        listOfSectionData[widget
+                                            .courseName]
+                                        [index]["videos"]
+                                        [subIndex]["name"]
+                                            .toString(),
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.normal,
+                                        overflow: TextOverflow.ellipsis),
+                                  ),
+                                  // )
+                                )
+                              ],
+                            ),
+                          )),
+                    ),
+                  )
+                      : DragTarget<int>(
+                    builder: (context, _, __) => GestureDetector(
+                        onDoubleTap: () {
+                          print("doubletap");
+                          if (role != null) {
+                            if (role == "mentor") {
+                              setState(() {
+                                // selectAssignment = null;
+                                subIndex = subsectionIndex;
+                                index = sectionIndex;
+                              });
+                            }
+                          }
+                          print(subsectionIndex);
+                        },
+                        onTap: () {
+                          if (listOfSectionData[widget.courseName]
+                          [sectionIndex]["videos"]
+                          [subsectionIndex]["type"] ==
+                              "video") {
+                            _betterPlayerController.dispose();
+
+                            String vidUrl = setUrl(
+                                listOfSectionData[widget.courseName]
+                                [sectionIndex]["videos"]
+                                [subsectionIndex]["url"]);
+                            initBetterPlayer(vidUrl);
+
+                            setState(() {
+                              presentvideolink =
+                              listOfSectionData[widget.courseName]
+                              [sectionIndex]["videos"]
+                              [subsectionIndex]["url"];
+                            });
+                          } else if (listOfSectionData[widget.courseName]
+                          [sectionIndex]["videos"]
+                          [subsectionIndex]["type"] ==
+                              'assignment') {
+                            for (var i in assignmentlist) {
+                              if (i['name'] ==
+                                  listOfSectionData[widget.courseName]
+                                  [sectionIndex]["videos"]
+                                  [subsectionIndex]["name"]) {
+                                print(
+                                    'root.link assignment1 ${i['url']}');
+                                Navigator.push(
+                                  this.context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        AssignmentScreen(
+                                            i['url'], i['pdf'],
+                                            pdfUrl: pdfUrl,
+                                            assignmentName:
+                                            assignmentName,
+                                            dataSetName: dataSetName,
+                                            dataSetUrl: dataSetUrl),
+                                  ),
+                                );
+                                break;
+                              }
+                            }
+                          } else if (listOfSectionData[widget.courseName]
+                          [sectionIndex]["videos"]
+                          [subsectionIndex]["type"] ==
+                              'quiz') {
+                            // logic for getting the map by filtering by title
+                            var data;
+                            for (var i in quizlist) {
+                              if (i['name'] ==
+                                  listOfSectionData[widget.courseName]
+                                  [sectionIndex]["videos"]
+                                  [subsectionIndex]["name"]) {
+                                data = i;
+                                break;
+                              }
+                            }
+                            Navigator.push(
+                              this.context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    QuizentrypageWidget(data),
+                              ),
+                            );
+                          } else if (listOfSectionData[widget.courseName]
+                          [sectionIndex]["videos"]
+                          [subsectionIndex]["type"] ==
+                              'resume') {
+                            Navigator.push(
+                              this.context,
+                              MaterialPageRoute(
+                                builder: (context) => SubmitResume(
+                                  studentId: studentName!,
+                                  studentEmail: userEmail!,
+                                  studentName: studentName!,
+                                ),
+                              ),
+                            );
+                          }
+                        },
+                        child: Container(
+                          padding: EdgeInsets.only(
+                              left: 30, top: 15, bottom: 15),
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Row(
+                              children: [
+                                listOfSectionData[widget.courseName]
+                                [sectionIndex]["videos"]
+                                [subsectionIndex]["type"] ==
+                                    "video"
+                                    ? Icon(Icons.play_circle)
+                                    : Icon(Icons.assessment,
+                                    color: listOfSectionData[widget.courseName][sectionIndex]
+                                    ["videos"]
+                                    [subsectionIndex]
+                                    ["type"] ==
+                                        'assignment' ||
+                                        listOfSectionData[widget.courseName]
+                                        [sectionIndex]
+                                        ["videos"]
+                                        [subsectionIndex]["type"] ==
+                                            'quiz'
+                                        ? Colors.purple
+                                        : null),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    listOfSectionData[widget.courseName]
+                                    [sectionIndex]
+                                    ["videos"][subsectionIndex]
+                                    ["type"] ==
+                                        "video"
+                                        ? listOfSectionData[widget.courseName]
+                                    [sectionIndex]["videos"]
+                                    [subsectionIndex]["name"]
+                                        .toString()
+                                        : listOfSectionData[widget.courseName]
+                                    [sectionIndex]
+                                    ["videos"][subsectionIndex]
+                                    ["type"] ==
+                                        "assignment"
+                                        ? "Assignment : " +
+                                        listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["name"].toString()
+                                        : listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["type"] == "quiz"
+                                        ? "Quiz : " + listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["name"].toString()
+                                        : listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["name"].toString(),
+                                    style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        color: listOfSectionData[widget.courseName]
+                                        [sectionIndex]
+                                        ["videos"]
+                                        [subsectionIndex]
+                                        ["type"] ==
+                                            'assignment' ||
+                                            listOfSectionData[widget
+                                                .courseName]
+                                            [sectionIndex]
+                                            ["videos"][
+                                            subsectionIndex]["type"] ==
+                                                'quiz'
+                                            ? Colors.purple
+                                            : null),
+                                  ),
+                                ),
+                                listOfSectionData[widget.courseName]
+                                [sectionIndex]["videos"]
+                                [subsectionIndex]["type"] ==
+                                    'video'
+                                    ? FutureBuilder(
+                                  future: getProooDataaa(
+                                      listOfSectionData[widget
+                                          .courseName]
+                                      [sectionIndex]["id"]
+                                          .toString(),
+                                      listOfSectionData[widget
+                                          .courseName]
+                                      [sectionIndex]
+                                      ["videos"][
+                                      subsectionIndex]["id"]
+                                          .toString()),
+                                  builder: (context, snapshot) {
+                                    if (snapshot.hasData) {
+                                      return Row(
+                                        children: [
+                                          Text(
+                                            snapshot.data == '' ||
+                                                snapshot.data ==
+                                                    null ||
+                                                snapshot.data ==
+                                                    'null'
+                                                ? '0%'
+                                                : '${snapshot.data}%',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight:
+                                                FontWeight
+                                                    .bold),
+                                          ),
+                                          Column(
+                                            mainAxisSize:
+                                            MainAxisSize.min,
+                                            children: [
+                                              Transform.scale(
+                                                scale: 1,
+                                                child: Checkbox(
+                                                  checkColor:
+                                                  snapshot.data ==
+                                                      '100'
+                                                      ? Colors
+                                                      .white
+                                                      : Colors
+                                                      .white,
+                                                  fillColor: snapshot
+                                                      .data ==
+                                                      '100'
+                                                      ? MaterialStateProperty.resolveWith<
+                                                      Color>((Set<
+                                                      MaterialState>
+                                                  states) {
+                                                    if (states
+                                                        .contains(
+                                                        MaterialState.disabled)) {
+                                                      return Colors
+                                                          .green;
+                                                    }
+                                                    return Colors
+                                                        .green;
+                                                  })
+                                                      : null,
+                                                  value:
+                                                  snapshot.data ==
+                                                      '100'
+                                                      ? true
+                                                      : false,
+                                                  shape:
+                                                  CircleBorder(),
+                                                  onChanged: snapshot
+                                                      .data !=
+                                                      '100' ||
+                                                      snapshot.data ==
+                                                          ''
+                                                      ? (bool?
+                                                  value) {
+                                                    setState(
+                                                            () {
+                                                          setVideoProgress(
+                                                              listOfSectionData[widget.courseName][sectionIndex]["id"],
+                                                              listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["id"],
+                                                              100);
+                                                          print(
+                                                              'Updated List ::: ${_getVideoPercentageList}');
+                                                          updateVideoProgress(
+                                                              _getVideoPercentageList);
+                                                        });
+                                                  }
+                                                      : null,
+                                                ),
+                                              ),
+                                              Text(
+                                                'Mark As Complete',
+                                                style: TextStyle(
+                                                    fontSize: 5,
+                                                    color: Colors
+                                                        .black),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      );
+                                    } else {
+                                      return SizedBox();
+                                    }
+                                  },
+                                )
+                                    : SizedBox(),
+                                quizScoreMap[listOfSectionData[
+                                widget.courseName]
+                                [sectionIndex]["videos"]
+                                [subsectionIndex]["name"]] !=
+                                    null
+                                    ? Padding(
+                                  padding:
+                                  EdgeInsets.only(right: 10),
+                                  child: Text(
+                                    '${quizScoreMap[listOfSectionData[widget.courseName][sectionIndex]["videos"][subsectionIndex]["name"]].round()}%',
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight:
+                                        FontWeight.bold),
+                                  ),
+                                )
+                                    : SizedBox(),
+                              ],
+                            ),
+                          ),
+                          color: presentvideolink ==
+                              listOfSectionData[widget.courseName]
+                              [sectionIndex]["videos"]
+                              [subsectionIndex]["url"]
+                              ? Colors.purpleAccent.withOpacity(0.5)
+                              : null,
+                        )),
+                    onAccept: (data) async {
+                      int count = 0;
+                      if (subIndex != null &&
+                          index != null &&
+                          index == sectionIndex) {
+                        if (subIndex! < subsectionIndex) {
+                          print(true);
+                          for (int i = 0; i <= subsectionIndex; i++) {
+                            print("count===");
+                            if (i == subIndex) {
+                              listOfSectionData[widget.courseName]
+                              [sectionIndex]["videos"][i]["sr"] =
+                              listOfSectionData[widget.courseName]
+                              [sectionIndex]["videos"]
+                              [subsectionIndex]["sr"];
+                              continue;
+                            }
+                            print("count===${count}");
+                            listOfSectionData[widget.courseName]
+                            [sectionIndex]["videos"][i]["sr"] = count;
+                            count++;
+                          }
+                        } else {
+                          print(false);
+                          count = 0;
+                          for (int j = subsectionIndex;
+                          j <= subIndex!;
+                          j++) {
+                            print("j======${j}");
+                            if (j == subIndex) {
+                              listOfSectionData[widget.courseName]
+                              [sectionIndex]["videos"][j]["sr"] =
+                                  subsectionIndex;
+                              print(
+                                  "a = ${listOfSectionData[widget.courseName][sectionIndex]["videos"][j]["sr"]}");
+                            } else {
+                              listOfSectionData[widget.courseName]
+                              [sectionIndex]["videos"][j]["sr"] =
+                                  j + 1;
+                              print(
+                                  "b = ${listOfSectionData[widget.courseName][sectionIndex]["videos"][j]["sr"]}");
+                            }
+                          }
+                        }
+                        await FirebaseFirestore.instance
+                            .collection("courses")
+                            .doc(courseId)
+                            .update({"curriculum1": listOfSectionData});
+                        setState(() {
+                          listOfSectionData;
+                          subIndex = null;
+                          index = null;
+                        });
+                      }
+                    },
+                  ),
+                ]);
+              })),
+        ),
+      ],
+    );
+  }
+
 }
 
 class Counter {

@@ -1,7 +1,7 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:cloudyml_app2/globals.dart';
-// import 'package:cloudyml_app2/module/assignment_screen.dart';
-// import 'package:cloudyml_app2/module/video_screen.dart';
+// import 'package:dataly_app/globals.dart';
+// import 'package:dataly_app/module/assignment_screen.dart';
+// import 'package:dataly_app/module/video_screen.dart';
 // import 'package:flutter/material.dart';
 // import 'package:page_transition/page_transition.dart';
 

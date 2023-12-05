@@ -1,4 +1,4 @@
-// import 'package:cloudyml_app2/homepage.dart';
+// import 'package:dataly_app/homepage.dart';
 // import 'package:flutter/material.dart';
 // import '../../models/quiz_model.dart';
 // import '../model/category.dart';
@@ -6,7 +6,7 @@
 // import '../model/question.dart';
 // import '../quiz_db.dart';
 // import '../widget/questions_widget.dart';
-// import 'package:cloudyml_app2/home.dart';
+// import 'package:dataly_app/home.dart';
 
 // class CategoryPage extends StatefulWidget {
 //   final Category category;

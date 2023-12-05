@@ -4,26 +4,26 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:badges/badges.dart' as Badge;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/MyAccount/myaccount.dart';
-import 'package:cloudyml_app2/Providers/UserProvider.dart';
-import 'package:cloudyml_app2/aboutus.dart';
-import 'package:cloudyml_app2/authentication/firebase_auth.dart';
-import 'package:cloudyml_app2/models/course_details.dart';
-import 'package:cloudyml_app2/payments_history.dart';
-import 'package:cloudyml_app2/my_Courses.dart';
-import 'package:cloudyml_app2/homepage.dart';
-import 'package:cloudyml_app2/offline/offline_videos.dart';
-import 'package:cloudyml_app2/privacy_policy.dart';
-import 'package:cloudyml_app2/screens/all_certificate_screen.dart';
-import 'package:cloudyml_app2/screens/groups_list.dart';
-import 'package:cloudyml_app2/screens/moneyref/money_referal_screen.dart';
-import 'package:cloudyml_app2/screens/review.dart';
-import 'package:cloudyml_app2/services/database_service.dart';
+import 'package:dataly_app/MyAccount/myaccount.dart';
+import 'package:dataly_app/Providers/UserProvider.dart';
+import 'package:dataly_app/aboutus.dart';
+import 'package:dataly_app/authentication/firebase_auth.dart';
+import 'package:dataly_app/models/course_details.dart';
+import 'package:dataly_app/payments_history.dart';
+import 'package:dataly_app/my_Courses.dart';
+import 'package:dataly_app/homepage.dart';
+import 'package:dataly_app/offline/offline_videos.dart';
+import 'package:dataly_app/privacy_policy.dart';
+import 'package:dataly_app/screens/all_certificate_screen.dart';
+import 'package:dataly_app/screens/groups_list.dart';
+import 'package:dataly_app/screens/moneyref/money_referal_screen.dart';
+import 'package:dataly_app/screens/review.dart';
+import 'package:dataly_app/services/database_service.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:cloudyml_app2/services/local_notificationservice.dart';
-import 'package:cloudyml_app2/store.dart';
-import 'package:cloudyml_app2/story/story_provider.dart';
-import 'package:cloudyml_app2/story/story_screen.dart';
+import 'package:dataly_app/services/local_notificationservice.dart';
+import 'package:dataly_app/store.dart';
+import 'package:dataly_app/story/story_provider.dart';
+import 'package:dataly_app/story/story_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -33,7 +33,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:is_first_run/is_first_run.dart';
 import 'package:provider/provider.dart';
 import 'package:showcaseview/showcaseview.dart';
-import 'package:cloudyml_app2/screens/groupscreen.dart';
+import 'package:dataly_app/screens/groupscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Services/code_generator.dart';
 import 'Services/deeplink_service.dart';
@@ -799,9 +799,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             //     ),
             //   ),
             // ),
-            Divider(
-              thickness: 2,
-            ),
+            // Divider(
+            //   thickness: 2,
+            // ),
             // InkWell(
             //   onTap: () {
             //     Navigator.push(context,
@@ -843,19 +843,19 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             //     ),
             //   ),
             // ),
-            InkWell(
-              child: ListTile(
-                title: Text('About Us'),
-                leading: Icon(
-                  Icons.info,
-                  color: HexColor('6153D3'),
-                ),
-              ),
-              onTap: () async {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => AboutUs()));
-              },
-            ),
+            // InkWell(
+            //   child: ListTile(
+            //     title: Text('About Us'),
+            //     leading: Icon(
+            //       Icons.info,
+            //       color: HexColor('6153D3'),
+            //     ),
+            //   ),
+            //   onTap: () async {
+            //     Navigator.push(context,
+            //         MaterialPageRoute(builder: (context) => AboutUs()));
+            //   },
+            // ),
             // InkWell(
             //   child: ListTile(
             //     title: Text('Share'),
@@ -1211,29 +1211,29 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 // import 'package:badges/badges.dart';
 // import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:cloudyml_app2/MyAccount/myaccount.dart';
-// import 'package:cloudyml_app2/Providers/UserProvider.dart';
-// import 'package:cloudyml_app2/aboutus.dart';
-// import 'package:cloudyml_app2/authentication/firebase_auth.dart';
-// import 'package:cloudyml_app2/combo/dropdown.dart';
-// import 'package:cloudyml_app2/models/course_details.dart';
+// import 'package:dataly_app/MyAccount/myaccount.dart';
+// import 'package:dataly_app/Providers/UserProvider.dart';
+// import 'package:dataly_app/aboutus.dart';
+// import 'package:dataly_app/authentication/firebase_auth.dart';
+// import 'package:dataly_app/combo/dropdown.dart';
+// import 'package:dataly_app/models/course_details.dart';
 // import 'package:is_first_run/is_first_run.dart';
 // import 'package:showcaseview/showcaseview.dart';
 // import 'catalogue_screen.dart';
 // import 'global_variable.dart' as globals;
-// import 'package:cloudyml_app2/payments_history.dart';
-// import 'package:cloudyml_app2/my_Courses.dart';
-// import 'package:cloudyml_app2/homepage.dart';
-// import 'package:cloudyml_app2/offline/offline_videos.dart';
-// import 'package:cloudyml_app2/privacy_policy.dart';
-// import 'package:cloudyml_app2/screens/groups_list.dart';
+// import 'package:dataly_app/payments_history.dart';
+// import 'package:dataly_app/my_Courses.dart';
+// import 'package:dataly_app/homepage.dart';
+// import 'package:dataly_app/offline/offline_videos.dart';
+// import 'package:dataly_app/privacy_policy.dart';
+// import 'package:dataly_app/screens/groups_list.dart';
 
-// import 'package:cloudyml_app2/screens/review.dart';
-// import 'package:cloudyml_app2/services/database_service.dart';
-// import 'package:cloudyml_app2/services/local_notificationservice.dart';
-// import 'package:cloudyml_app2/store.dart';
-// import 'package:cloudyml_app2/story/story_provider.dart';
-// import 'package:cloudyml_app2/story/story_screen.dart';
+// import 'package:dataly_app/screens/review.dart';
+// import 'package:dataly_app/services/database_service.dart';
+// import 'package:dataly_app/services/local_notificationservice.dart';
+// import 'package:dataly_app/store.dart';
+// import 'package:dataly_app/story/story_provider.dart';
+// import 'package:dataly_app/story/story_screen.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 // import 'package:flutter/material.dart';

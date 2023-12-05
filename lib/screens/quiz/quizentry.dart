@@ -1,6 +1,6 @@
-import 'package:cloudyml_app2/screens/quiz/quizinstructions.dart';
+import 'package:dataly_app/screens/quiz/quizinstructions.dart';
 import 'package:go_router/go_router.dart';
-import 'package:cloudyml_app2/global_variable.dart' as globals;
+import 'package:dataly_app/global_variable.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';

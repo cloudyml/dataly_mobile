@@ -1,15 +1,15 @@
-// import 'package:cloudyml_app2/quizStory/quiz_widget.dart';
-// import 'package:cloudyml_app2/story/story_constants.dart';
-// import 'package:cloudyml_app2/story/story_provider.dart';
-// import 'package:cloudyml_app2/story/story_view_customised.dart';
-// import 'package:cloudyml_app2/story/story_widget.dart';
+// import 'package:dataly_app/quizStory/quiz_widget.dart';
+// import 'package:dataly_app/story/story_constants.dart';
+// import 'package:dataly_app/story/story_provider.dart';
+// import 'package:dataly_app/story/story_view_customised.dart';
+// import 'package:dataly_app/story/story_widget.dart';
 // import 'package:flutter/material.dart';
 // import 'package:loading_animations/loading_animations.dart';
 // import 'package:provider/provider.dart';
 // import 'package:story_view/controller/story_controller.dart';
 
-// import 'package:cloudyml_app2/globals.dart';
-// import 'package:cloudyml_app2/home.dart';
+// import 'package:dataly_app/globals.dart';
+// import 'package:dataly_app/home.dart';
 
 // import '../models/story_model.dart';
 // import '../quizStory/model/question.dart';

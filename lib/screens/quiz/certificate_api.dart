@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:cloudyml_app2/global_variable.dart' as globals;
+import 'package:dataly_app/global_variable.dart' as globals;
 import 'model/certificatemodel.dart';
 
 class certificateApi {

@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloudyml_app2/Live_doubt_support/live_doubt_screen.dart';
-import 'package:cloudyml_app2/combo/controller/combo_course_controller.dart';
+import 'package:dataly_app/Live_doubt_support/live_doubt_screen.dart';
+import 'package:dataly_app/combo/controller/combo_course_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';

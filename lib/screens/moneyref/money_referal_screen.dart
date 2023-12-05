@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/screens/moneyref/edit_payment_detail.dart';
-import 'package:cloudyml_app2/screens/moneyref/ref_history.dart';
+import 'package:dataly_app/screens/moneyref/edit_payment_detail.dart';
+import 'package:dataly_app/screens/moneyref/ref_history.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';

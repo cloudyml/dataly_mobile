@@ -1,11 +1,11 @@
 import 'dart:math';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloudyml_app2/api/firebase_api.dart';
-import 'package:cloudyml_app2/screens/student_review/review_screen.dart';
+import 'package:dataly_app/api/firebase_api.dart';
+import 'package:dataly_app/screens/student_review/review_screen.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
-import 'package:cloudyml_app2/models/firebase_file.dart';
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/models/firebase_file.dart';
+import 'package:dataly_app/globals.dart';
 
 class ReviewsScreen extends StatefulWidget {
   const ReviewsScreen({Key? key}) : super(key: key);

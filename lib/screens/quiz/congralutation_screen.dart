@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/screens/quiz/quizsolution.dart';
+import 'package:dataly_app/screens/quiz/quizsolution.dart';
 import 'package:flutter/material.dart';
 import 'package:image_downloader_web/image_downloader_web.dart';
 import '../flutter_flow/flutter_flow_theme.dart';

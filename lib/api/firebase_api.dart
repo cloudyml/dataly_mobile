@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:cloudyml_app2/models/firebase_file.dart';
+import 'package:dataly_app/models/firebase_file.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:path_provider/path_provider.dart';
 
-import 'package:cloudyml_app2/models/firebase_story.dart';
+import 'package:dataly_app/models/firebase_story.dart';
 
 class FirebaseApi {
   static Future<List<String>> _getDownloadLinks(List<Reference> refs) =>

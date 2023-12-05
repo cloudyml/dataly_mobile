@@ -4,8 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:flutter/material.dart';
-import 'package:cloudyml_app2/global_variable.dart' as globals;
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/global_variable.dart' as globals;
+import 'package:dataly_app/globals.dart';
 
 import '../catalogue_screen.dart';
 

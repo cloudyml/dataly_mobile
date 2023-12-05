@@ -1,18 +1,18 @@
 import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloudyml_app2/payments_history.dart';
-import 'package:cloudyml_app2/privacy_policy.dart';
-import 'package:cloudyml_app2/screens/all_certificate_screen.dart';
-import 'package:cloudyml_app2/screens/moneyref/money_referal_screen.dart';
+import 'package:dataly_app/payments_history.dart';
+import 'package:dataly_app/privacy_policy.dart';
+import 'package:dataly_app/screens/all_certificate_screen.dart';
+import 'package:dataly_app/screens/moneyref/money_referal_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
-import 'package:cloudyml_app2/models/firebase_file.dart';
-import 'package:cloudyml_app2/screens/image_page.dart';
+import 'package:dataly_app/models/firebase_file.dart';
+import 'package:dataly_app/screens/image_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/globals.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'aboutus.dart';
 import 'authentication/firebase_auth.dart';

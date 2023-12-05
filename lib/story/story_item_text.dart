@@ -1,4 +1,4 @@
-// import 'package:cloudyml_app2/story/story_view_customised.dart';
+// import 'package:dataly_app/story/story_view_customised.dart';
 // import 'package:flutter/material.dart';
 // import 'package:url_launcher/url_launcher.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cloudyml_app2/theme.dart';
+import 'package:dataly_app/theme.dart';
 
 class LoaderHUD extends StatelessWidget {
   final bool inAsyncCall;

@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:math';
-import 'package:cloudyml_app2/globals.dart';
+import 'package:dataly_app/globals.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/home.dart';
-import 'package:cloudyml_app2/pages/otp_page.dart';
-import 'package:cloudyml_app2/screens/stores/login_store.dart';
+import 'package:dataly_app/home.dart';
+import 'package:dataly_app/pages/otp_page.dart';
+import 'package:dataly_app/screens/stores/login_store.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +12,9 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
-import 'package:cloudyml_app2/theme.dart';
-import 'package:cloudyml_app2/widgets/loader_hud.dart';
-import 'package:cloudyml_app2/global_variable.dart' as globals;
+import 'package:dataly_app/theme.dart';
+import 'package:dataly_app/widgets/loader_hud.dart';
+import 'package:dataly_app/global_variable.dart' as globals;
 import 'package:toast/toast.dart';
 import 'package:url_launcher/url_launcher.dart';
 

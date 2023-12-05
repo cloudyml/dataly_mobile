@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/home.dart';
-import 'package:cloudyml_app2/homepage.dart';
+import 'package:dataly_app/home.dart';
+import 'package:dataly_app/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:toast/toast.dart';

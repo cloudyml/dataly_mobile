@@ -1,4 +1,4 @@
-import 'package:cloudyml_app2/utils/convert_to_two_digits.dart';
+import 'package:dataly_app/utils/convert_to_two_digits.dart';
 import 'package:flutter/material.dart';
 
 Widget timeElapsedString({required Duration position}) {

@@ -2,16 +2,16 @@
 // import 'dart:math';
 // import 'dart:typed_data';
 // import 'package:auto_orientation/auto_orientation.dart';
-// import 'package:cloudyml_app2/globals.dart';
-// import 'package:cloudyml_app2/offline/db.dart';
-// import 'package:cloudyml_app2/models/offline_model.dart';
+// import 'package:dataly_app/globals.dart';
+// import 'package:dataly_app/offline/db.dart';
+// import 'package:dataly_app/models/offline_model.dart';
 // import 'package:chewie/chewie.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:cloudyml_app2/offline/offline_videoscreen.dart';
-// import 'package:cloudyml_app2/utils/utils.dart';
+// import 'package:dataly_app/offline/offline_videoscreen.dart';
+// import 'package:dataly_app/utils/utils.dart';
 // import 'package:dio/dio.dart';
 // import 'package:flutter/material.dart';
-// import 'package:cloudyml_app2/home.dart';
+// import 'package:dataly_app/home.dart';
 // import 'package:flutter/services.dart';
 // import 'package:video_player/video_player.dart';
 //

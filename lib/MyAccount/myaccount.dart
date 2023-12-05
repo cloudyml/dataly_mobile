@@ -2,13 +2,13 @@ import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/MyAccount/ChangePassword.dart';
-import 'package:cloudyml_app2/MyAccount/EditProfile.dart';
-import 'package:cloudyml_app2/Providers/UserProvider.dart';
-import 'package:cloudyml_app2/authentication/firebase_auth.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/offline/offline_videos.dart';
-import 'package:cloudyml_app2/pages/notificationpage.dart';
+import 'package:dataly_app/MyAccount/ChangePassword.dart';
+import 'package:dataly_app/MyAccount/EditProfile.dart';
+import 'package:dataly_app/Providers/UserProvider.dart';
+import 'package:dataly_app/authentication/firebase_auth.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/offline/offline_videos.dart';
+import 'package:dataly_app/pages/notificationpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -581,54 +581,54 @@ class _MyAccountPageState extends State<MyAccountPage> {
                               color: Colors.black,
                             ),
                           ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => ChangePassword()));
-                            },
-                            child: Padding(
-                                padding: EdgeInsets.fromLTRB(
-                                    horizontalScale * 29,
-                                    verticalScale * 25,
-                                    horizontalScale * 18,
-                                    verticalScale * 14),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                        height: min(horizontalScale,
-                                                verticalScale) *
-                                            42,
-                                        width: min(horizontalScale,
-                                                verticalScale) *
-                                            42,
-                                        decoration: BoxDecoration(
-                                          color: HexColor('EBE9FE'),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(min(
-                                                      horizontalScale,
-                                                      verticalScale) *
-                                                  8)),
-                                        ),
-                                        child: Icon(
-                                          Icons.key,
-                                          color: HexColor('6153D3'),
-                                        )),
-                                    SizedBox(
-                                      width: horizontalScale * 18,
-                                    ),
-                                    Text(
-                                      'Change Password',
-                                      textScaleFactor:
-                                          min(horizontalScale, verticalScale),
-                                      style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w600),
-                                    ),
-                                  ],
-                                )),
-                          ),
+                          // InkWell(
+                          //   onTap: () {
+                          //     Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //             builder: (context) => ChangePassword()));
+                          //   },
+                          //   child: Padding(
+                          //       padding: EdgeInsets.fromLTRB(
+                          //           horizontalScale * 29,
+                          //           verticalScale * 25,
+                          //           horizontalScale * 18,
+                          //           verticalScale * 14),
+                          //       child: Row(
+                          //         children: [
+                          //           Container(
+                          //               height: min(horizontalScale,
+                          //                       verticalScale) *
+                          //                   42,
+                          //               width: min(horizontalScale,
+                          //                       verticalScale) *
+                          //                   42,
+                          //               decoration: BoxDecoration(
+                          //                 color: HexColor('EBE9FE'),
+                          //                 borderRadius: BorderRadius.all(
+                          //                     Radius.circular(min(
+                          //                             horizontalScale,
+                          //                             verticalScale) *
+                          //                         8)),
+                          //               ),
+                          //               child: Icon(
+                          //                 Icons.key,
+                          //                 color: HexColor('6153D3'),
+                          //               )),
+                          //           SizedBox(
+                          //             width: horizontalScale * 18,
+                          //           ),
+                          //           Text(
+                          //             'Change Password',
+                          //             textScaleFactor:
+                          //                 min(horizontalScale, verticalScale),
+                          //             style: TextStyle(
+                          //                 fontSize: 18,
+                          //                 fontWeight: FontWeight.w600),
+                          //           ),
+                          //         ],
+                          //       )),
+                          // ),
                           Padding(
                             padding: EdgeInsets.fromLTRB(
                                 horizontalScale * 30,

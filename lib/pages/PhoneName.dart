@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/Providers/AppProvider.dart';
-import 'package:cloudyml_app2/Providers/UserProvider.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/home.dart';
-import 'package:cloudyml_app2/widgets/loading.dart';
+import 'package:dataly_app/Providers/AppProvider.dart';
+import 'package:dataly_app/Providers/UserProvider.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/home.dart';
+import 'package:dataly_app/widgets/loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';

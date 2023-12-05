@@ -1,6 +1,6 @@
-// import 'package:cloudyml_app2/story/story_constants.dart';
-// import 'package:cloudyml_app2/story/story_page_view.dart';
-// import 'package:cloudyml_app2/story/story_view_customised.dart';
+// import 'package:dataly_app/story/story_constants.dart';
+// import 'package:dataly_app/story/story_page_view.dart';
+// import 'package:dataly_app/story/story_view_customised.dart';
 // import 'package:flutter/material.dart';
 
 // import '../models/story_model.dart';

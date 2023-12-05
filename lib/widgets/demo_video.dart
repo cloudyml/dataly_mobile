@@ -1,6 +1,6 @@
 import 'package:auto_orientation/auto_orientation.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/widgets/settings_bottomsheet.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/widgets/settings_bottomsheet.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:video_player/video_player.dart';

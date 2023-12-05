@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:cloudyml_app2/module/video_screen.dart';
+import 'package:dataly_app/module/video_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 

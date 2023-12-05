@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/Providers/chat_screen_provider.dart';
-import 'package:cloudyml_app2/widgets/audio_bubble.dart';
+import 'package:dataly_app/Providers/chat_screen_provider.dart';
+import 'package:dataly_app/widgets/audio_bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 

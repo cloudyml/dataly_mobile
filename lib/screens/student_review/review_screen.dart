@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloudyml_app2/screens/flutter_flow/flutter_flow_util.dart';
-import 'package:cloudyml_app2/screens/student_review/postReviewScreen.dart';
-import 'package:cloudyml_app2/screens/student_review/reviewModel.dart';
+import 'package:dataly_app/screens/flutter_flow/flutter_flow_util.dart';
+import 'package:dataly_app/screens/student_review/postReviewScreen.dart';
+import 'package:dataly_app/screens/student_review/reviewModel.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 

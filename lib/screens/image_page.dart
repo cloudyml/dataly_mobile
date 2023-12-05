@@ -1,5 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloudyml_app2/models/firebase_file.dart';
+import 'package:dataly_app/models/firebase_file.dart';
 import 'package:flutter/material.dart';
 
 class ImagePage extends StatelessWidget {

@@ -1,12 +1,12 @@
 import 'dart:math';
 
-import 'package:cloudyml_app2/Providers/AppProvider.dart';
-import 'package:cloudyml_app2/Providers/UserProvider.dart';
-import 'package:cloudyml_app2/authentication/firebase_auth.dart';
-import 'package:cloudyml_app2/authentication/onboardnew.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/screens/onboarding_phone.dart';
-import 'package:cloudyml_app2/widgets/loading.dart';
+import 'package:dataly_app/Providers/AppProvider.dart';
+import 'package:dataly_app/Providers/UserProvider.dart';
+import 'package:dataly_app/authentication/firebase_auth.dart';
+import 'package:dataly_app/authentication/onboardnew.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/screens/onboarding_phone.dart';
+import 'package:dataly_app/widgets/loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

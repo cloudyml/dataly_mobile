@@ -1,5 +1,5 @@
-import 'package:cloudyml_app2/international_payment_screen.dart';
-import 'package:cloudyml_app2/payment_screen.dart';
+import 'package:dataly_app/international_payment_screen.dart';
+import 'package:dataly_app/payment_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';

@@ -1,9 +1,9 @@
 import 'dart:math';
 
-import 'package:cloudyml_app2/authentication/firebase_auth.dart';
-import 'package:cloudyml_app2/globals.dart';
-import 'package:cloudyml_app2/home.dart';
-import 'package:cloudyml_app2/widgets/loading.dart';
+import 'package:dataly_app/authentication/firebase_auth.dart';
+import 'package:dataly_app/globals.dart';
+import 'package:dataly_app/home.dart';
+import 'package:dataly_app/widgets/loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
